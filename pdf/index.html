@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LockStepPDF — Prepress Software for Print Shops</title>
-    <meta name="description" content="LockStepPDF is subscription prepress software from LockStep Tools, formerly ReadySetPDF. Version 3.54 is the current installer: Resize, Crop, Rotate, Cutter, Monkey, Grid, and Booklet. Price is not listed here.">
-    <meta name="keywords" content="LockStepPDF, ReadySetPDF, prepress software, PDF imposition, booklet maker, step and repeat, cutter marks, print shop PDF">
-    <meta name="author" content="Darren Moeller">
+    <meta name="description" content="LockStepPDF is subscription prepress software from LockStep Tools. One recipe: fix the pages, stack the prepress steps, and run that same recipe from a hot folder. The price is not listed here.">
+    <meta name="keywords" content="LockStepPDF, prepress software, PDF imposition, booklet maker, step and repeat, cutter marks, hot folder, print shop PDF">
+    <meta name="author" content="LockStep Tools">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#19123D">
     <link rel="canonical" href="https://locksteptools.com/pdf/">
@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="pdf.css">
     <meta property="og:title" content="LockStepPDF — Prepress Software for Print Shops">
-    <meta property="og:description" content="Formerly ReadySetPDF. Resize, crop, rotate, impose, and mark a press sheet on your own Windows PC. Download 3.54.">
+    <meta property="og:description" content="One recipe for the prepress desk. Fix the pages, stack the steps, and let a hot folder run it. Local on Windows.">
     <meta property="og:image" content="https://locksteptools.com/assets/img/locksteppdf.jpg">
     <meta property="og:url" content="https://locksteptools.com/pdf/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="LockStep Tools">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LockStepPDF — Prepress Software for Print Shops">
-    <meta name="twitter:description" content="Formerly ReadySetPDF. Local Windows prepress. Download 3.54.">
+    <meta name="twitter:description" content="One recipe for the prepress desk. Local on Windows. Download 3.54.">
     <meta name="twitter:image" content="https://locksteptools.com/assets/img/locksteppdf.jpg">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9R888JBBB0"></script>
     <script>
@@ -41,24 +41,22 @@
           "@type": "Organization",
           "@id": "https://locksteptools.com/#organization",
           "name": "LockStep Tools",
-          "legalName": "ReadySetPDF LLC",
           "url": "https://locksteptools.com",
-          "email": "darren@readysetpdf.com"
+          "email": "darren@locksteptools.com"
         },
         {
           "@type": "SoftwareApplication",
           "@id": "https://locksteptools.com/pdf/#app",
           "name": "LockStepPDF",
-          "alternateName": "ReadySetPDF",
           "url": "https://locksteptools.com/pdf/",
           "softwareVersion": "3.54",
           "operatingSystem": "Windows",
           "applicationCategory": "BusinessApplication",
           "applicationSubCategory": "Prepress",
-          "description": "Subscription prepress software for print shops. Version 3.54 is the current installer and includes Resize, Crop, Rotate, Cutter, Monkey, Grid, and Booklet. The subscription price is not published on this page.",
+          "description": "Subscription prepress software for print shops. One recipe: load the PDFs, fix the pages, stack the prepress steps, and run that same recipe from a hot folder. The subscription price is not published on this page.",
           "downloadUrl": "https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/v3.5/ReadySetPDF_v3.54_Setup.exe",
           "screenshot": "https://locksteptools.com/assets/img/locksteppdf.jpg",
-          "featureList": ["Resize", "Crop", "Rotate", "Cutter", "Monkey", "Grid", "Booklet"],
+          "featureList": ["Page setup", "Resize", "Crop", "Bleed", "Grid", "Booklet", "Cutter", "Rotate", "Color", "Mail Merge", "Preflight", "Hot folders"],
           "publisher": { "@id": "https://locksteptools.com/#organization" }
         }
       ]
@@ -66,7 +64,7 @@
     </script>
 </head>
 <body>
-<a class="skip" href="#tools">Skip to content</a>
+<a class="skip" href="#desk">Skip to content</a>
 
 <header class="site-header">
     <div class="inner">
@@ -79,9 +77,9 @@
         </a>
         <nav class="nav-links" aria-label="Primary">
             <a href="../">Company</a>
-            <a href="#tools" aria-current="page">LockStepPDF</a>
-            <a href="#pro">Pro tools</a>
-            <a href="#whats-new">Subscription</a>
+            <a href="#desk" aria-current="page">The desk</a>
+            <a href="#prepress">Prepress</a>
+            <a href="#automation">Automation</a>
             <a href="../ocr/">LockStepOCR</a>
             <a href="../label/">LockStepLabel</a>
         </nav>
@@ -100,9 +98,11 @@
         <h2>LockStepPDF</h2>
         <nav>
             <a href="../" onclick="closeDrawer()">Company</a>
-            <a href="#tools" onclick="closeDrawer()">Tools in 3.54</a>
-            <a href="#pro" onclick="closeDrawer()">Pro tools</a>
-            <a href="#whats-new" onclick="closeDrawer()">Subscription</a>
+            <a href="#desk" onclick="closeDrawer()">The desk</a>
+            <a href="#pages" onclick="closeDrawer()">Page setup</a>
+            <a href="#prepress" onclick="closeDrawer()">Prepress</a>
+            <a href="#preflight" onclick="closeDrawer()">Preflight</a>
+            <a href="#automation" onclick="closeDrawer()">Automation</a>
             <a href="#faq" onclick="closeDrawer()">FAQ</a>
             <a href="../ocr/" onclick="closeDrawer()">LockStepOCR</a>
             <a href="../label/" onclick="closeDrawer()">LockStepLabel</a>
@@ -116,10 +116,10 @@
         <div class="crop-frame">
             <div class="hero-split">
                 <div class="hero-inner left">
-                    <p class="hook">Formerly ReadySetPDF</p>
-                    <p class="eyebrow" style="margin-top:1.15rem;">LockStep Tools · version 3.54</p>
-                    <h1>The prepress desk, on the PC that already has the job</h1>
-                    <p class="lede">LockStepPDF is a subscription. It stacks real shop steps: resize, crop, rotate, impose, and mark the sheet. Version 3.54 is the installer available today. The subscription price is not on this page. Customer files never leave the building.</p>
+                    <p class="hook">Subscription</p>
+                    <p class="eyebrow" style="margin-top:1.15rem;">LockStep Tools · LockStepPDF</p>
+                    <h1>One job, built as a recipe</h1>
+                    <p class="lede">LockStepPDF is one job, built as a recipe. You load the PDFs, fix the pages that need it, stack the prepress steps, watch the result, and either save the file or let a hot folder run that same recipe.</p>
                     <form class="dl-form" style="justify-content:flex-start;" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="87298c41-e530-4f0e-a077-be5638bad3de">
                         <input type="hidden" name="subject" value="LockStepPDF 3.54 download">
@@ -130,128 +130,290 @@
                         <button class="btn btn-lime btn-lg" type="submit">Download 3.54</button>
                         <p class="dl-note" hidden></p>
                     </form>
-                    <p class="meta-line">Subscription product. 3.54 is the current Windows installer, still named ReadySetPDF. This is not a free-forever license.</p>
+                    <p class="meta-line">Subscription product. Version 3.54 is the Windows installer on this page. The price is not listed here.</p>
                 </div>
-                <aside class="sheet" aria-label="Tools in version 3.54">
+                <aside class="sheet" aria-label="How a LockStepPDF recipe is built">
                     <div class="sheet-top">
                         <span>Job ticket</span>
-                        <span>3.54</span>
+                        <span>Recipe</span>
                     </div>
                     <ol>
-                        <li>Resize <span>Fit the stock</span></li>
-                        <li>Crop <span>Honor the box</span></li>
-                        <li>Rotate <span>Press orientation</span></li>
-                        <li>Cutter <span>Marks for bindery</span></li>
-                        <li>Monkey <span>Impose</span></li>
-                        <li>Grid <span>Step and repeat</span></li>
-                        <li>Booklet <span>Saddle stitch</span></li>
+                        <li>Assets <span>The files</span></li>
+                        <li>Page setup <span>The pages you fix</span></li>
+                        <li>Applied Steps <span>The stack</span></li>
+                        <li>Monitor <span>The page, live</span></li>
+                        <li>Preflight <span>The press profile</span></li>
+                        <li>Hot folder <span>The same recipe</span></li>
                     </ol>
                 </aside>
             </div>
         </div>
     </section>
 
-    <section class="section" id="tools">
+    <section class="section" id="desk">
         <div class="wrap">
-            <p class="kicker">What changed on this page</p>
-            <h2>The list now matches the buttons in 3.54</h2>
-            <p class="sub">Older pages advertised a longer arsenal than the window shows. This page follows the toolbar. An asterisk in the app means that tool is planned for Pro, so those six sit in their own group.</p>
+            <p class="kicker">How the tools belong together</p>
+            <h2>The desk is the recipe</h2>
+            <p class="sub">Every later tool reads the files loaded in Assets. Page edits become one line. Prepress steps stack under that. A hot folder runs the same list.</p>
             <div class="compare">
                 <article class="now">
-                    <span class="badge badge-navy">In the download</span>
-                    <h3>Seven tools you can run</h3>
-                    <p>Resize, Crop, Rotate, Cutter, Monkey, Grid, and Booklet. Stack them, save a recipe, and load it on the next file.</p>
+                    <span class="badge badge-navy">On the desk</span>
+                    <h3>Build it by hand</h3>
+                    <p>Load the PDFs, fix the pages, stack the steps, and watch the page. Save the file where you want it. A copy can also land in each production folder named on the recipe.</p>
                 </article>
                 <article class="pro">
-                    <span class="badge badge-lime">Marked Pro</span>
-                    <h3>Six tools in the window, not in this build</h3>
-                    <p>Mail Merge/Stamp, Color, Preflight, Automation, Unlock, and OCR Extract. They are visible so you can see the desk. They are not the current download.</p>
+                    <span class="badge badge-lime">Unattended</span>
+                    <h3>Run that same recipe</h3>
+                    <p>Three hot folders. Each has an input, an output, and a saved recipe. One watcher runs every pipeline that is filled in. Preflight can sort the job by the result.</p>
                 </article>
             </div>
+            <ul class="grid-3" style="list-style:none;padding:0;">
+                <li class="card">
+                    <p class="tool-no">The job</p>
+                    <h3>Assets</h3>
+                    <p>Assets is the job. Every later tool reads the files loaded there.</p>
+                </li>
+                <li class="card">
+                    <p class="tool-no">The pages</p>
+                    <h3>Page controls</h3>
+                    <p>Page controls change chosen pages inside those files. When the edits are right, Add to recipe stores them as one Page setup line. The recipe then applies that setup to the files that are loaded when it runs.</p>
+                </li>
+                <li class="card" id="applied-steps">
+                    <p class="tool-no">The stack</p>
+                    <h3>Applied Steps</h3>
+                    <p>Applied Steps is the recipe. Resize, Crop, Bleed, Grid, Booklet, Cutter, Rotate, Color, and Mail Merge each add a line. Click a line to reopen that tool. Add appends a step. Overwrite replaces the selected one. Order matters: grow the bleed before you impose, convert color before you preflight, impose before you add cutter marks.</p>
+                </li>
+                <li class="card">
+                    <p class="tool-no">The view</p>
+                    <h3>Real-Time Monitor</h3>
+                    <p>The Real-Time Monitor shows the current page, with rulers in inches, millimetres, or points. Grid, Booklet, Crop, Resize, Bleed, and Mail Merge update that view as you change the fields.</p>
+                </li>
+                <li class="card">
+                    <p class="tool-no">The check</p>
+                    <h3>Preflight</h3>
+                    <p>Preflight reads the file against a press profile. From the report you can jump into the tool that fixes the problem, starting with Color. Reading the report does not need a paid license. Export to JSON or PDF, and that jump, are Pro.</p>
+                </li>
+                <li class="card">
+                    <p class="tool-no">Unattended</p>
+                    <h3>Automation</h3>
+                    <p>Automation is the same recipe, unattended. Three hot folders each have an input, an output, and a saved recipe. Preflight can run with those jobs and sort them by the result.</p>
+                </li>
+                <li class="card">
+                    <p class="tool-no">The copies</p>
+                    <h3>Production destinations</h3>
+                    <p>Production destinations are extra folders named on the recipe. The file you save stays where you put it, and a copy also lands in each chosen folder.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
 
+    <section class="section" id="pages" style="padding-top:0;">
+        <div class="wrap">
             <div class="group-head">
-                <h2>In version 3.54</h2>
-                <p>These are the steps without an asterisk. Add one, reorder the stack, save the recipe.</p>
+                <h2>Page-level control</h2>
+                <p>These act on the pages you highlight, including pages in more than one file. They do not change the original file on disk until you save.</p>
+            </div>
+            <ul class="grid-3" style="list-style:none;padding:0;">
+                <li class="card" id="assets">
+                    <p class="tool-no">Pages</p>
+                    <h3>Asset list</h3>
+                    <p>Each page shows its size. Color pages are labeled Color, Pagemix, or Colormix. Select every page, fronts, backs, one size, or every page that matches a set of properties. Drag pages into another PDF. Undo the move. Clear the list and the recipe stays.</p>
+                </li>
+                <li class="card" id="boxes">
+                    <p class="tool-no">Boxes</p>
+                    <h3>Page boxes</h3>
+                    <p>Leave the PDF boxes as they were, set the CropBox to the TrimBox so a viewer hides the bleed, or clip the page to the trim and drop the extra margin.</p>
+                </li>
+                <li class="card" id="page-color">
+                    <p class="tool-no">Color</p>
+                    <h3>Color, on the selected pages</h3>
+                    <p>Open Color for the highlight only, then keep that choice as a page-level step.</p>
+                </li>
+                <li class="card" id="page-crop">
+                    <p class="tool-no">Crop</p>
+                    <h3>Crop, on the selected pages</h3>
+                    <p>Step each edge in or out. The monitor follows the crop.</p>
+                </li>
+                <li class="card" id="page-bleed">
+                    <p class="tool-no">Bleed</p>
+                    <h3>Bleed, on the selected pages</h3>
+                    <p>Add bleed to the pages that need it, without imposing the whole job yet.</p>
+                </li>
+                <li class="card" id="page-resize">
+                    <p class="tool-no">Resize</p>
+                    <h3>Resize, on the selected pages</h3>
+                    <p>Place the page from a 3 by 3 anchor, with horizontal and vertical offsets. The artwork keeps its size unless you choose to stretch it.</p>
+                </li>
+                <li class="card" id="page-rotate">
+                    <p class="tool-no">Rotate</p>
+                    <h3>Rotate, on the selected pages</h3>
+                    <p>Turn a page 90, 180, or 270 degrees. A quarter turn swaps width and height. Fronts and backs can turn separately.</p>
+                </li>
+                <li class="card" id="blank-delete">
+                    <p class="tool-no">Pages</p>
+                    <h3>Blank and Delete</h3>
+                    <p>Insert a blank page, or remove a highlighted page from the working file. Blank pages are how a duplex or booklet job gets an empty back.</p>
+                </li>
+                <li class="card" id="page-setup">
+                    <p class="tool-no">Recipe</p>
+                    <h3>Page setup</h3>
+                    <p>One recipe line that carries those page edits, so the next run starts from the same page list.</p>
+                </li>
+                <li class="card" id="arrange">
+                    <p class="tool-no">Order</p>
+                    <h3>Arrange</h3>
+                    <p>The page-order window for the loaded PDFs. Reorder, rotate, and recolor, then write that order back. Each PDF stays its own file. Join and Split live here, under output page order.</p>
+                </li>
+                <li class="card" id="join">
+                    <p class="tool-no">Output</p>
+                    <h3>Join</h3>
+                    <p>Combine the loaded PDFs into one file. Name it from the first file, or from the date and time.</p>
+                </li>
+                <li class="card" id="split">
+                    <p class="tool-no">Output</p>
+                    <h3>Split</h3>
+                    <p>Write each page out as its own PDF.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="prepress" style="padding-top:0;">
+        <div class="wrap">
+            <div class="group-head">
+                <h2>Prepress</h2>
+                <p>Each of these adds a line. Add appends a step. Overwrite replaces the selected one. Click a line to reopen that tool.</p>
             </div>
             <ul class="grid-3" style="list-style:none;padding:0;">
                 <li class="card" id="resize">
-                    <p class="tool-no">01</p>
+                    <p class="tool-no">Fit</p>
                     <h3>Resize</h3>
-                    <p>Map a client PDF to Letter, Tabloid, or a width and height you type. Force landscape when the stock is turned. Stretch the art to the bounding box, or leave the aspect ratio and center it. The trim box follows.</p>
-                    <p class="example"><strong>On the desk.</strong> A customer sends one business card as a loose page that is not the finished size, or a flyer built to a page the press is not running. Resize maps that page to the card you will cut, or to Letter or Tabloid, before Grid or anyone else touches it.</p>
+                    <p>Fit each page onto a target sheet: Letter, Legal, Tabloid, A4, or a size you save. Use it when the incoming trim is wrong, before you impose. Landscape is a checkbox on the tool, not a second preset.</p>
                 </li>
                 <li class="card" id="crop">
-                    <p class="tool-no">02</p>
+                    <p class="tool-no">Margin</p>
                     <h3>Crop</h3>
-                    <p>On import, keep the original boxes, set CropBox to TrimBox, or clip the extra margin back to TrimBox. Preview, export, and the steps you stack all use that choice. Monkey, Grid, and Booklet can impose to the TrimBox instead of the MediaBox.</p>
-                    <p class="example"><strong>On the desk.</strong> The art is a 3.5×2 card, but the media box is a wide white field around the trim. Step the media box and the gutter is a lie. Crop sets the crop box to the trim box, or clips that extra margin, so the next tool sees the piece you will actually cut.</p>
+                    <p>Take margin off the top, bottom, left, and right, in equal or unequal amounts. A step size and arrows move one edge at a time. Amounts use the current unit.</p>
                 </li>
-                <li class="card" id="rotate">
-                    <p class="tool-no">03</p>
-                    <h3>Rotate</h3>
-                    <p>Turn the page into the orientation the press sheet wants before the next step. It sits with Resize and Crop, which is where orientation problems actually show up.</p>
-                    <p class="example"><strong>On the desk.</strong> A letter that must become landscape. The page was built portrait. The digital press is loaded the other way. Rotate puts the page in the orientation the sheet wants before Crop or Grid.</p>
+                <li class="card" id="bleed">
+                    <p class="tool-no">Bleed</p>
+                    <h3>Grow bleed</h3>
+                    <p>Use this when the artwork has no bleed. Quick grow scales the page. Edge extend mirrors or stretches the outer edge into the new margin. The grown page keeps a TrimBox, so Grid and Booklet can pack on the finished size afterward.</p>
                 </li>
-                <li class="card" id="cutter">
-                    <p class="tool-no">04</p>
-                    <h3>Cutter</h3>
-                    <p>Crop marks in black or white, with positive or negative overlap so the mark crosses into the trim or sits off it. Cutter L, registration, and dots land on the four corners for Monkey, Grid, and Booklet.</p>
-                    <p class="example"><strong>On the desk.</strong> A gang of cards is imposed and still has no marks. Bindery cannot see the corners. Cutter draws the L marks, registration, and dots, in black on a light sheet or white when the stock would swallow black, so the operator is not cutting to a guess.</p>
-                </li>
-                <li class="card" id="monkey">
-                    <p class="tool-no">05</p>
-                    <h3>Monkey</h3>
-                    <p>The imposition tab beside Grid and Booklet. Use it when the sheet is not a plain step-and-repeat and not a saddle stitch. It honors TrimBox and takes the same crop marks as the other two.</p>
-                    <p class="example"><strong>On the desk.</strong> The form is a door hanger, a rack card, and a postcard. That is not a stack of the same card, and it is not a booklet. Monkey is the imposition for a sheet that is not a simple grid.</p>
+                <li class="card" id="source-trim">
+                    <p class="tool-no">Trim</p>
+                    <h3>Source trim</h3>
+                    <p>For art that already includes bleed. Grid, Booklet, and the marks step by the finished trim, not the bleed box. A gutter of zero means the trims touch. Bleed hangs into the gutter. Crop marks sit on the trim. Leave the size blank and the tool uses the PDF TrimBox when it is smaller than the page.</p>
                 </li>
                 <li class="card" id="grid">
-                    <p class="tool-no">06</p>
+                    <p class="tool-no">Impose</p>
                     <h3>Grid</h3>
-                    <p>Step and repeat. Set rows, columns, and gutter, then lock a selection so the pieces stay put when the grid changes. A 3×3 white-space anchor pads from the cell you pick. Built for cards, tags, and labels on 12×18 and 13×19.</p>
-                    <p class="example"><strong>On the desk.</strong> Business cards on 13×19. One finished card, repeated in rows and columns, with a gutter the cutter can use. Lock the selection so a change to the count does not shove the pieces. The same step covers tags and labels on 12×18.</p>
+                    <p>Step-and-repeat onto a press sheet. Type the rows and columns, or use auto max-fit, which counts the same grid you could place by hand. Gutters, margins, and a 3 by 3 anchor control the white space. Printer’s marks use a gap, a line weight, and a color.</p>
                 </li>
                 <li class="card" id="booklet">
-                    <p class="tool-no">07</p>
+                    <p class="tool-no">Impose</p>
                     <h3>Booklet</h3>
-                    <p>Paginate a reader file into 2-up printer spreads. Creep is the paper thickness; each inner sheet adds that amount. Outward moves content toward the spine. Inward opens the gutter. The same 3×3 anchor Grid uses can pad the margins.</p>
-                    <p class="example"><strong>On the desk.</strong> A 32-page program, saddle stitched. Without creep, the face trim shears the outer pages short and the center pages stick out. Creep is that paper thickness, added for each inner sheet. Outward pulls content toward the spine. Inward opens the gutter.</p>
+                    <p>Saddle-stitch spreads. Creep is the thickness of one sheet. The cover does not shift. Each sheet inside adds that amount again. Facing pages pack on the finished trim when the art already has bleed. White space uses the same 3 by 3 anchor as Grid.</p>
                 </li>
-            </ul>
-
-            <div class="group-head" id="pro">
-                <h2>Marked for Pro</h2>
-                <p>Shown in 3.54 with an asterisk: planned for the Pro tier. Descriptions are the jobs they are being built to run.</p>
-            </div>
-            <ul class="grid-3" style="list-style:none;padding:0;">
-                <li class="card" id="mail-merge">
-                    <div class="row-between"><p class="tool-no">Mail Merge/Stamp</p><span class="badge badge-outline">Pro</span></div>
-                    <h3>Variable data, on your hardware</h3>
-                    <p>Open ODS, XLSX, or CSV. Click a column, then the template. Address blocks place, with bold, italic, and underline. Mail merge prints in millimetres, including a tight envelope window. Output pages are template pages times rows that contain data.</p>
+                <li class="card" id="cutter">
+                    <p class="tool-no">Marks</p>
+                    <h3>Cutter</h3>
+                    <p>Cut marks for a collator or cutter. Target every page, fronts, or backs. Add a registration L, a cross, or round dots at the corners. Marks can be black, grey, white, or a chosen color.</p>
+                </li>
+                <li class="card" id="rotate">
+                    <p class="tool-no">Turn</p>
+                    <h3>Rotate</h3>
+                    <p>The recipe version of the page rotate: 90, 180, or 270 degrees, for all pages or for fronts and backs.</p>
+                </li>
+                <li class="card" id="insert-blank">
+                    <p class="tool-no">Pages</p>
+                    <h3>Insert blank page</h3>
+                    <p>Put an empty page at the start, the end, or after a page number. Booklet and duplex jobs use it so a back has somewhere to land.</p>
+                </li>
+                <li class="card" id="folds">
+                    <p class="tool-no">Guide</p>
+                    <h3>Folds</h3>
+                    <p>A visual guide, not a production step. It draws panels on the monitor for a half fold, Z fold, gate fold, roll fold, tri-fold, double parallel, double gate, French fold, or accordion. Tuck is built into the folds that need a shorter closing panel. Export is a die-line proof as PDF, PNG, or JPG, from Export Proofs.</p>
                 </li>
                 <li class="card" id="color">
-                    <div class="row-between"><p class="tool-no">Color</p><span class="badge badge-outline">Pro</span></div>
-                    <h3>Color, next to page geometry</h3>
-                    <p>The Color step is where a preflight finding goes when the art is RGB and the press is not. Page Geometry stays in the unit the desk already uses: inches, millimetres, or points.</p>
-                </li>
-                <li class="card" id="preflight">
-                    <div class="row-between"><p class="tool-no">Preflight</p><span class="badge badge-outline">Pro</span></div>
-                    <h3>A press-side audit</h3>
-                    <p>Fonts, including art inside forms. Resolution at the DPI you set. RGB on CMYK work. Bleed, hairlines, ink coverage, transparency, overprint, and JPEG 2000. The report does not rewrite the file. 3.54 can already note page size, RGB, images under 250 DPI, and font names on screen.</p>
-                </li>
-                <li class="card" id="automation">
-                    <div class="row-between"><p class="tool-no">Automation</p><span class="badge badge-outline">Pro</span></div>
-                    <h3>Hot folders and recipes</h3>
-                    <p>Three pipelines. Each has its own input, output, and saved recipe. Drop a PDF and the recipe runs. Drop a spreadsheet on a recipe that already holds the envelope, and it mail-merges. The job waits until the copy finishes, including from a network path.</p>
+                    <p class="tool-no">Color</p>
+                    <h3>Color</h3>
+                    <p>Convert the pages for the process you are running: keep the original, grayscale, black and white, sepia, CMYK, or RGB. You set the raster DPI at 300, 400, 600, or 1200. Sliders cover brightness, contrast, highlights, shadows, gamma, saturation, vibrance, hue, and color balance. CMYK adds gray-component replacement, a total-ink limit, and per-channel trim. The monitor updates as you move a slider. The PDF changes when you add the step.</p>
                 </li>
                 <li class="card" id="unlock">
-                    <div class="row-between"><p class="tool-no">Unlock</p><span class="badge badge-outline">Pro</span></div>
-                    <h3>Owner passwords off the file</h3>
-                    <p>Strip an owner password and a print-lock so the file can be cropped, imposed, and sent to the RIP without a detour through the program that locked it.</p>
+                    <p class="tool-no">Locks</p>
+                    <h3>Unlock</h3>
+                    <p>Clears a Print Lock or Edit Lock that LockStepPDF wrote. A PDF that will not open until someone types a password stays locked.</p>
                 </li>
-                <li class="card" id="ocr-extract">
-                    <div class="row-between"><p class="tool-no">OCR Extract</p><span class="badge badge-outline">Pro</span></div>
-                    <h3>Searchable text, inside this app</h3>
-                    <p>OCR Extract is the in-app step, still marked Pro. The engine that already ships is <a class="text-link" href="../ocr/">LockStepOCR</a>: three watch folders, a searchable PDF, original page size. Use that today. This button is the one that will live on the LockStepPDF stack.</p>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="inspect" style="padding-top:0;">
+        <div class="wrap">
+            <div class="group-head">
+                <h2>Inspection</h2>
+                <p>Read the file against a profile, and watch the page you are about to make.</p>
+            </div>
+            <ul class="grid-2" style="list-style:none;padding:0;">
+                <li class="card" id="preflight">
+                    <p class="tool-no">Profile</p>
+                    <h3>Preflight</h3>
+                    <p>Checks the file against a profile you can edit. The built-in starting points are Standard Digital Press, Commercial Sheetfed, and Soft Proof. The checks are image resolution, embedded fonts, trim and bleed boxes, RGB color, hairline strokes, total CMYK ink, transparency, overprint, and JPEG 2000. Each check can fail the job, hold it, or be ignored.</p>
+                    <p>You can read the report without a paid license. Export to JSON or PDF, and the jump from a finding into the fix tool, are Pro.</p>
+                </li>
+                <li class="card" id="monitor">
+                    <p class="tool-no">View</p>
+                    <h3>Real-Time Monitor</h3>
+                    <p>The page you are about to make, with tick rulers and a readout from the left and top edges. It is the shared view for crop, resize, bleed, grid, booklet, folds, and mail merge. Float it out or leave it docked. Rulers read in inches, millimetres, or points.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="variable" style="padding-top:0;">
+        <div class="wrap">
+            <div class="group-head">
+                <h2>Variable data</h2>
+                <p>A template plus a spreadsheet. The recipe can remember the template.</p>
+            </div>
+            <ul class="grid-2" style="list-style:none;padding:0;">
+                <li class="card" id="mail-merge">
+                    <p class="tool-no">Data</p>
+                    <h3>Mail Merge</h3>
+                    <p>A template PDF plus a spreadsheet: CSV, Excel, or LibreOffice ODS. Click a column tag, then click the template to place it. An address block places the whole block as one object. Long lines shrink to fit the box. The monitor shows the variable text before you add the step. A saved recipe remembers the template, so a hot folder can be given only the spreadsheet.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="automation" style="padding-top:0;">
+        <div class="wrap">
+            <div class="group-head">
+                <h2>Automation</h2>
+                <p>The recipe you built by hand, pointed at a folder.</p>
+            </div>
+            <ul class="grid-2" style="list-style:none;padding:0;">
+                <li class="card" id="hot-folders">
+                    <p class="tool-no">Pipelines</p>
+                    <h3>Hot folders</h3>
+                    <p>Three pipelines. Each one has its own input folder, output folder, and recipe. One watcher runs every pipeline that is filled in. Drop a file in, and the recipe that you built by hand runs on it.</p>
+                </li>
+                <li class="card" id="auto-preflight">
+                    <p class="tool-no">Sort</p>
+                    <h3>Preflight with automation</h3>
+                    <p>Turn this on and the hot folder also runs the active preflight profile. Pass, hold, and fail can be sent to different folders.</p>
+                </li>
+                <li class="card" id="ocr-folders">
+                    <p class="tool-no">Scans</p>
+                    <h3>OCR hot folders</h3>
+                    <p>Three more watch folders, separate from the prepress pipelines. A scan dropped in one becomes a searchable PDF at the original page size. You set the language, a filename prefix or suffix, and what happens afterward, including an email. This is for making a scan selectable, not for imposing it.</p>
+                    <p><a class="text-link" href="../ocr/">LockStepOCR</a> remains the free standalone installer.</p>
+                </li>
+                <li class="card" id="recipes">
+                    <p class="tool-no">File</p>
+                    <h3>Recipes</h3>
+                    <p>The Applied Steps list, the page setup, the unit, and the production folders, saved as one file. Load it on the desk, or point a hot folder at it.</p>
                 </li>
             </ul>
         </div>
@@ -263,10 +425,10 @@
                 <h2>What the desk gets back</h2>
                 <p>The slow part of prepress is the layout you rebuild by hand. LockStepPDF keeps that recipe on the machine that already has the file.</p>
                 <dl class="stats">
-                    <div><dt>45 min → 10 sec</dt><dd>Booklet setups, once the creep and the sheet are saved</dd></div>
-                    <div><dt>10,000+ records</dt><dd>Variable data planned to run on your hardware, not a browser</dd></div>
+                    <div><dt>One recipe</dt><dd>Page setup, applied steps, the unit, and the production folders</dd></div>
+                    <div><dt>Three pipelines</dt><dd>Each hot folder has an input, an output, and a saved recipe</dd></div>
                     <div><dt>100% local</dt><dd>No upload, no file-size cap, no account</dd></div>
-                    <div><dt>A saved recipe</dt><dd>Applied Steps can be stored and loaded on the next file</dd></div>
+                    <div><dt>Pass, hold, fail</dt><dd>Preflight can run with the hot folder and sort the job</dd></div>
                 </dl>
             </div>
         </div>
@@ -274,36 +436,36 @@
 
     <section class="shots" id="screenshots">
         <div class="wrap" style="max-width:1000px;">
-            <h2>The 3.54 window</h2>
-            <p class="sub">Assets on the left, the step stack under them, the live page on the right. The title bar in this build still says ReadySetPDF.</p>
+            <h2>The desk</h2>
+            <p class="sub">Assets on the left, Applied Steps under them, the live page on the right.</p>
             <figure>
-                <img src="../assets/img/locksteppdf.jpg" alt="LockStepPDF 3.54 window, still titled ReadySetPDF, with Resize, Crop, Monkey, Grid, Booklet, Cutter, and Rotate, plus Pro tools marked with an asterisk" width="1908" height="1025">
-                <figcaption>Version 3.54. Asterisks mark Mail Merge/Stamp, Color, Preflight, Automation, Unlock, and OCR Extract.</figcaption>
+                <img src="../assets/img/locksteppdf.jpg" alt="LockStepPDF window with the asset list, applied steps, and a live page preview" width="1908" height="1025">
+                <figcaption>The files, the step stack, and the page you are about to make.</figcaption>
             </figure>
         </div>
     </section>
 
-    <section class="section" id="whats-new">
+    <section class="section" id="subscription">
         <div class="wrap">
             <p class="kicker">How it is sold</p>
             <h2>LockStepPDF is a subscription</h2>
-            <p class="sub">The product is sold as a subscription. Version 3.54 is the installer you can download today. The price, the billing period, and a signup link are not published here.</p>
+            <p class="sub">The product is a subscription. Version 3.54 is the installer you can download today. The price is not published here.</p>
             <div class="grid-2">
                 <article class="card">
-                    <h3>The current installer</h3>
-                    <p>3.54 includes Resize, Crop, Rotate, Cutter, Monkey, Grid, and Booklet. Six other names are in the window with an asterisk. That asterisk is about what this build contains. It is not a Free-versus-Pro price list.</p>
-                </article>
-                <article class="card">
                     <h3>The subscription</h3>
-                    <p>LockStepPDF is not free forever, and it is not sold as a one-time purchase. When billing is ready, it will be a subscription. Until then, 3.54 remains the installer on this page, and there is no payment button.</p>
+                    <p>LockStepPDF is not free forever, and it is not a one-time purchase. This page does not list a price, a billing period, or a payment button. LockStepOCR is the free tool. LockStepLabel, still under development, will be the one-time purchase when it ships.</p>
                 </article>
                 <article class="card">
-                    <h3>Recipes a folder can run</h3>
-                    <p>Standard Digital Press, Commercial Sheetfed, and Soft Proof ship as starting recipes. Each check is Fail, Maybe, or Ignore. Pass, Fail, and Maybe each get a folder, with a JSON report beside the file.</p>
+                    <h3>What Pro covers here</h3>
+                    <p>You can read a preflight report without a paid license. Export of that report to JSON or PDF, and the jump from a finding into the fix tool, are Pro.</p>
                 </article>
                 <article class="card">
-                    <h3>The desk you already use</h3>
-                    <p>Hot-fix checks live in About and Global Settings. Assets, Applied Steps, and the live monitor can pop out so Add Files stays on screen. Page Geometry follows inches, millimetres, or points.</p>
+                    <h3>A recipe a folder can run</h3>
+                    <p>Applied Steps, the page setup, the unit, and the production folders, saved as one file. Three hot folders each point at a recipe. Pass, hold, and fail can go to different folders.</p>
+                </article>
+                <article class="card">
+                    <h3>The page, in your unit</h3>
+                    <p>The Real-Time Monitor follows inches, millimetres, or points. Crop, resize, bleed, grid, booklet, folds, and mail merge update that view as you change the fields. Float it out or leave it docked.</p>
                 </article>
             </div>
         </div>
@@ -312,15 +474,15 @@
     <section class="section" id="faq" style="padding-top:0;">
         <div class="wrap" style="max-width:768px;">
             <h2>LockStepPDF questions</h2>
-            <p class="sub">Straight answers, matched to version 3.54.</p>
+            <p class="sub">Straight answers, matched to the recipe.</p>
             <div class="faq-list">
                 <details>
                     <summary>What is LockStepPDF?</summary>
-                    <p>Windows prepress software from LockStep Tools, sold as a subscription. It was ReadySetPDF. Resize, crop, rotate, cutter marks, and imposition run on your own PC. Customer files stay in the shop. The subscription price is not listed on this site.</p>
+                    <p>Windows prepress software from LockStep Tools, sold as a subscription. It is one job, built as a recipe. You load the PDFs, fix the pages that need it, stack the prepress steps, watch the result, and either save the file or let a hot folder run that same recipe. Customer files stay in the shop. The subscription price is not listed on this site.</p>
                 </details>
                 <details>
-                    <summary>What is actually in the 3.54 download?</summary>
-                    <p>Resize, Crop, Rotate, Cutter, Monkey, Grid, and Booklet. You can stack those steps and save a recipe. Mail Merge/Stamp, Color, Preflight, Automation, Unlock, and OCR Extract are drawn in the window with an asterisk. That asterisk means marked for Pro in this build, not included in this installer. It is a contents note, not the price. LockStepPDF itself is a subscription.</p>
+                    <summary>How do the tools belong together?</summary>
+                    <p>Assets is the job. Page controls change the pages you highlight, and Add to recipe stores them as one Page setup line. Applied Steps is the stack: Resize, Crop, Bleed, Grid, Booklet, Cutter, Rotate, Color, and Mail Merge. Order matters. Grow the bleed before you impose, convert color before you preflight, and impose before you add cutter marks. The Real-Time Monitor shows the page. Preflight reads the file against a press profile. Three hot folders run the same recipe.</p>
                 </details>
                 <details>
                     <summary>Does it work offline?</summary>
@@ -328,35 +490,35 @@
                 </details>
                 <details>
                     <summary>Can it do variable data?</summary>
-                    <p>Mail Merge/Stamp is the tool for ODS, XLSX, and CSV, including address blocks and millimetre placement for envelope windows. It is marked Pro in the 3.54 window, so it is not in the current installer. A hot folder that already holds the envelope is part of that same Automation work.</p>
+                    <p>Yes. Mail Merge takes a template PDF and a spreadsheet: CSV, Excel, or LibreOffice ODS. Click a column tag, then click the template to place it. An address block places the whole block as one object. Long lines shrink to fit the box. The monitor shows the variable text before you add the step. A saved recipe remembers the template, so a hot folder can be given only the spreadsheet.</p>
                 </details>
                 <details>
                     <summary>Does the booklet maker compensate for creep?</summary>
-                    <p>Yes. Creep is paper thickness, added for each inner sheet. Outward moves content toward the spine. Inward opens the gutter. Booklet is in the 3.54 download.</p>
+                    <p>Yes. Creep is the thickness of one sheet. The cover does not shift. Each sheet inside adds that amount again. Facing pages pack on the finished trim when the art already has bleed. White space uses the same 3 by 3 anchor as Grid.</p>
                 </details>
                 <details>
-                    <summary>What happened to fold proofs, blank pages, and splitting?</summary>
-                    <p>They were listed on the old ReadySetPDF page. They are not buttons in 3.54, so they are off the tool grid. That is about this build, not about a free tier.</p>
+                    <summary>What are folds for?</summary>
+                    <p>Folds are a visual guide, not a production step. The monitor draws panels for a half fold, Z fold, gate fold, roll fold, tri-fold, double parallel, double gate, French fold, or accordion. Tuck is built into the folds that need a shorter closing panel. Export Proofs writes a die-line proof as PDF, PNG, or JPG.</p>
                 </details>
                 <details>
-                    <summary>What preflight checks run today?</summary>
-                    <p>3.54 can report page size, RGB, images under 250 DPI, and font names. The fuller press-side audit — bleed, hairlines, ink coverage, transparency, overprint, JPEG 2000, and a saved recipe — is the Pro Preflight tool. The report does not rewrite the file.</p>
+                    <summary>What does preflight check, and what is Pro?</summary>
+                    <p>Preflight checks the file against a profile you can edit. The built-in starting points are Standard Digital Press, Commercial Sheetfed, and Soft Proof. The checks are image resolution, embedded fonts, trim and bleed boxes, RGB color, hairline strokes, total CMYK ink, transparency, overprint, and JPEG 2000. Each check can fail the job, hold it, or be ignored. You can read the report without a paid license. Export to JSON or PDF, and the jump from a finding into the fix tool, are Pro.</p>
                 </details>
                 <details>
                     <summary>Does it understand MediaBox, CropBox, and TrimBox?</summary>
-                    <p>Yes. Keep the original boxes, set CropBox to TrimBox, or clip extra margin to TrimBox. Monkey, Grid, and Booklet can impose to the TrimBox.</p>
+                    <p>Yes. Leave the PDF boxes as they were, set the CropBox to the TrimBox so a viewer hides the bleed, or clip the page to the trim and drop the extra margin. For art that already includes bleed, Grid, Booklet, and the marks step by the finished trim, not the bleed box. A gutter of zero means the trims touch. Bleed hangs into the gutter. Crop marks sit on the trim.</p>
                 </details>
                 <details>
                     <summary>What are the system requirements?</summary>
-                    <p>Microsoft Windows. Version 3.54 installs from a setup file. No browser and no account. The file is still named ReadySetPDF_v3.54_Setup.exe.</p>
+                    <p>Microsoft Windows. Version 3.54 installs from a setup file. No browser and no account. The app runs on the PC that already has the job.</p>
                 </details>
                 <details>
                     <summary>How is LockStepPDF sold?</summary>
-                    <p>As a subscription. Version 3.54 is the installer available today. This page does not list a price, a billing period, or a place to pay. It is not a free-forever product and it is not a one-time purchase. LockStepOCR is the free tool. LockStepLabel, still under development, will be the one-time purchase.</p>
+                    <p>As a subscription. Version 3.54 is the installer available today. This page does not list a price, a billing period, or a place to pay. It is not free forever, and it is not a one-time purchase. LockStepOCR is the free tool. LockStepLabel, still under development, will be the one-time purchase when it ships.</p>
                 </details>
                 <details>
-                    <summary>Where did ReadySetOCR go?</summary>
-                    <p>It is LockStepOCR, a separate download. OCR Extract inside LockStepPDF is the Pro step that will sit on this stack later. If you need searchable PDFs now, use LockStepOCR.</p>
+                    <summary>How is LockStepOCR different from the OCR hot folders?</summary>
+                    <p>LockStepPDF has three OCR watch folders, separate from the prepress pipelines. A scan dropped in one becomes a searchable PDF at the original page size. That is for making a scan selectable, not for imposing it. <a href="../ocr/">LockStepOCR</a> remains the free standalone installer.</p>
                 </details>
             </div>
         </div>
@@ -378,7 +540,7 @@
                     <p class="dl-note" hidden></p>
                 </form>
                 <div class="cta-row">
-                    <a class="btn btn-navy btn-lg" href="mailto:darren@readysetpdf.com?subject=LockStepPDF%20question">Email support</a>
+                    <a class="btn btn-navy btn-lg" href="mailto:darren@locksteptools.com?subject=LockStepPDF%20question">Email support</a>
                 </div>
                 <p style="margin-top:1.25rem;font-size:0.9rem;color:var(--steel);">Windows. The setup places the app under Program Files. Source is on <a class="text-link" href="https://github.com/pacnwtexan2112/ReadySetPDF">GitHub</a> for the AGPL libraries it uses.</p>
             </div>
@@ -391,20 +553,20 @@
         <div class="foot-top">
             <div>
                 <p style="font-family:var(--font-display);font-size:1.2rem;margin:0;">LockStepPDF</p>
-                <p style="color:var(--muted);font-size:0.9rem;max-width:26rem;margin-bottom:0;">Prepress software by LockStep Tools. Formerly ReadySetPDF.</p>
+                <p style="color:var(--muted);font-size:0.9rem;max-width:26rem;margin-bottom:0;">Prepress software by LockStep Tools. One recipe, on your Windows PC.</p>
             </div>
             <nav class="foot-nav" aria-label="Footer">
                 <a href="../">LockStep Tools</a>
-                <a href="#tools">Tools</a>
+                <a href="#desk">The desk</a>
                 <a href="#faq">FAQ</a>
                 <a href="../ocr/">LockStepOCR</a>
                 <a href="../label/">LockStepLabel</a>
-                <a href="mailto:darren@readysetpdf.com">Support</a>
+                <a href="mailto:darren@locksteptools.com">Support</a>
                 <a href="../legal/">Terms, privacy, refunds</a>
                 <button type="button" onclick="showAboutModal()">About and licenses</button>
             </nav>
         </div>
-        <p class="foot-copy">© 2026 LockStep Tools / ReadySetPDF LLC. Darren Moeller.</p>
+        <p class="foot-copy">© 2026 LockStep Tools.</p>
     </div>
 </footer>
 
@@ -419,14 +581,14 @@
             <button class="tab-btn" type="button" onclick="openTab('license-tab', this)">Open source</button>
         </div>
         <div id="about-tab" class="tab-panel active">
-            <h4 style="margin-top:0;">LockStepPDF — formerly ReadySetPDF</h4>
-            <p>Windows prepress software from LockStep Tools, ReadySetPDF LLC, sold as a subscription. Version 3.54 runs Resize, Crop, Rotate, Cutter, Monkey, Grid, and Booklet on your PC. The subscription price is not published here.</p>
-            <p>Questions: <a href="mailto:darren@readysetpdf.com">darren@readysetpdf.com</a></p>
+            <h4 style="margin-top:0;">LockStepPDF</h4>
+            <p>Windows prepress software from LockStep Tools, sold as a subscription. One job, built as a recipe: load the PDFs, fix the pages, stack the steps, and run that same recipe from a hot folder. The subscription price is not published here.</p>
+            <p>Questions: <a href="mailto:darren@locksteptools.com">darren@locksteptools.com</a></p>
         </div>
         <div id="license-tab" class="tab-panel">
             <p>LockStepPDF uses these libraries. PyMuPDF is AGPL. The app source is public so that term is met.</p>
             <ol>
-                <li><strong>PyMuPDF (fitz)</strong> — GNU AGPL v3.0. Source: <a href="https://github.com/pacnwtexan2112/ReadySetPDF">github.com/pacnwtexan2112/ReadySetPDF</a></li>
+                <li><strong>PyMuPDF (fitz)</strong> — GNU AGPL v3.0. Source: <a href="https://github.com/pacnwtexan2112/ReadySetPDF">LockStepPDF on GitHub</a></li>
                 <li><strong>Tesseract OCR</strong> — Apache License 2.0</li>
                 <li><strong>Pillow</strong> — HPND License</li>
                 <li><strong>TkinterDnD2</strong> — MIT License</li>
@@ -458,7 +620,7 @@
                     btn.disabled = false;
                     btn.textContent = "Download 3.54";
                     note.hidden = false;
-                    note.textContent = "That email did not save. Try again, or email darren@readysetpdf.com.";
+                    note.textContent = "That email did not save. Try again, or email darren@locksteptools.com.";
                 });
         });
     });

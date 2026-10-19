@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
-    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta property="og:title" content="LockStep Tools — Software for the Print Industry">
     <meta property="og:description" content="Windows software for commercial print. LockStepPDF for the prepress desk. LockStepOCR for searchable scans. Local, on your hardware.">
     <meta property="og:url" content="https://locksteptools.com/">
@@ -72,6 +72,7 @@
         <nav class="nav-links" aria-label="Primary">
             <a href="#software">Software</a>
             <a href="#floor">The shop floor</a>
+            <a href="#prepress">Prepress</a>
             <a href="pdf/">LockStepPDF</a>
             <a href="ocr/">LockStepOCR</a>
             <a href="label/">LockStepLabel</a>
@@ -92,6 +93,7 @@
         <nav aria-label="Mobile">
             <a href="#software" onclick="closeDrawer()">Software</a>
             <a href="#floor" onclick="closeDrawer()">The shop floor</a>
+            <a href="#prepress" onclick="closeDrawer()">Prepress</a>
             <a href="pdf/" onclick="closeDrawer()">LockStepPDF</a>
             <a href="ocr/" onclick="closeDrawer()">LockStepOCR</a>
             <a href="label/" onclick="closeDrawer()">LockStepLabel</a>
@@ -203,6 +205,42 @@
         </div>
     </section>
 
+    <section class="section reading" id="prepress">
+        <div class="wrap reading-wrap">
+            <p class="kicker">For the person who owns the desk</p>
+            <h2>Prepress, in the language of the shop</h2>
+            <p class="sub">This is the work between the file a customer sends and a plate, or a sheet on a digital press. The notes below are the job. The three programs are aimed at pieces of it.</p>
+
+            <h3>What prepress is</h3>
+            <p>A customer sends a PDF. Someone in the shop has to make that file match the stock, the press, and the cutter before it is worth imaging. That stretch of work is prepress. It sits after the estimate and before the press operator hits start: page size, the boxes inside the PDF, how many up on the sheet, marks for bindery, and whether the text can even be searched. If that work is sloppy, the press runs the mistake.</p>
+            <p>The file usually arrives looking finished. It is not finished until it fits the sheet you will actually run. A business card is not a press sheet. A letter is not a landscape tabloid. A booklet in reader order is not a saddle-stitched signature. Prepress is the translation.</p>
+            <p><a href="pdf/">LockStepPDF</a> is the subscription for that translation: size the page, crop to the box, rotate, impose, and mark the sheet. <a href="ocr/">LockStepOCR</a> is free, for the scan that has no text layer. <a href="label/">LockStepLabel</a> is under development for label sheets, and it will be a one-time purchase when it ships. There is nothing to buy for it today.</p>
+
+            <h3>Why files fail</h3>
+            <p>Most failures are ordinary, and they show up after the file has already been accepted. The boxes are the first. A PDF can carry a media box, a crop box, a trim box, and a bleed box. The picture on screen may be the trim, while the box the next tool uses is the media box, a wide field of white around the art. Step that, and the gutter is a lie. You imposed the margin.</p>
+            <p>Color is the next argument. A file built in RGB will not separate the way a press that wants CMYK expects. An office PDF, a logo dropped in from the web, a photo still in the camera’s color: any of those can ride into a job that the rest of the form is already building as process color. Version 3.54 can note RGB on screen, along with page size, images under 250 DPI, and font names. The fuller press-side audit is Preflight, and that tool is marked for Pro in the 3.54 window. It is not in the current installer.</p>
+            <p>Low-resolution images show up when a photo that looked sharp on a phone is placed large on a sheet. The screen forgives it. The press does not. Fonts fail when the type was not embedded and the shop PC substitutes something else, so a line reflows or a letter in a logo changes. Bleed fails when the art stops exactly at the trim. The cutter wanders a hair and leaves a white line down the edge. None of this is exotic. It is the list a prepress lead already argues about with the file.</p>
+
+            <h3>What imposition is</h3>
+            <p>Imposition is how the pieces sit on the sheet the press actually runs. One-up art is the customer’s file. The sheet is yours. On a 12×18 or a 13×19, the same card may repeat many times, with a gutter the cutter can use. A booklet is a different problem: reader order has to become printer spreads, and the thickness of the paper moves the pages.</p>
+            <p><a href="pdf/#grid">Grid</a> is step-and-repeat. Set rows, columns, and gutter, then lock a selection so the pieces stay put when the count changes. A 3×3 white-space anchor pads from the cell you pick. That is the tool for cards, tags, and labels on 12×18 and 13×19. Business cards on a 13×19 are the everyday case: one finished card, repeated, with a gutter, not a hand-built page for every position.</p>
+            <p><a href="pdf/#booklet">Booklet</a> is saddle stitch. A reader file becomes 2-up printer spreads. Creep is the paper thickness. Each inner sheet adds that amount. Skip it, and the face trim shears the outer pages short while the center pages stick out. Outward moves content toward the spine. Inward opens the gutter. The same 3×3 anchor Grid uses can pad the margins.</p>
+            <p><a href="pdf/#monkey">Monkey</a> is the imposition tab when the sheet is not a simple grid and not a saddle stitch. A mixed gang — a door hanger, a rack card, and a postcard on one form — does not repeat one cell. Monkey honors the trim box and takes the same crop marks as Grid and Booklet.</p>
+
+            <h3>What cutter marks are for</h3>
+            <p>The press does not know where the cutter will strike. <a href="pdf/#cutter">Cutter</a> puts marks on the sheet so bindery does. Crop marks in black or white, with positive or negative overlap, so the mark crosses into the trim or sits off it. Cutter L, registration, and dots land on the four corners for Monkey, Grid, and Booklet. Black on a light sheet, white when the stock would swallow a black mark. Without them, the operator is cutting to a line that was never drawn.</p>
+
+            <h3>Why the file should stay on the shop PC</h3>
+            <p>The file is the job. A customer list, a healthcare mailing, a price that is not public yet, a proof that is not approved. Sending that through someone else’s server so a browser can crop it makes a copy you do not control, and it adds a size limit and a wait. The prepress PC, or the shop server beside it, already has the file. Work there.</p>
+            <p>LockStepPDF and LockStepOCR run on Windows in the building. Nothing has to upload before you can resize, impose, or make a scan searchable. There is no account on the tool, and no file-size cap from a shared queue. That is the point of keeping the desk on the machine that already holds the job.</p>
+
+            <h3>How the three programs fit</h3>
+            <p><a href="pdf/">LockStepPDF</a> is the subscription, formerly ReadySetPDF. Version 3.54 is the installer on this site today. In that download: Resize, Crop, Rotate, Cutter, Monkey, Grid, and Booklet. You can stack those steps and save a recipe. Six other names sit in the window with an asterisk: Mail Merge/Stamp, Color, Preflight, Automation, Unlock, and OCR Extract. The asterisk means marked for Pro in this build. Those six are not the current download. The subscription price, the billing period, and a signup link are not published here. It is not a free-forever license, and it is not sold as a one-time purchase.</p>
+            <p><a href="ocr/">LockStepOCR</a> is free, formerly ReadySetOCR, version 2.4. It is its own program. Three pipelines, each with a watch folder and an output folder, write a searchable PDF and keep the original page size. The original is not deleted. Use it when a scan or a flat PDF has no text to search, then bring that file back to prepress. It is not the OCR Extract button inside LockStepPDF. That button is marked Pro and is not in the 3.54 installer.</p>
+            <p><a href="label/">LockStepLabel</a> is under development. The job it is being built for is label work: sheets of labels, a finished size, and the gutter between labels. There is no installer, no price, and no buy button. When it ships, it will be a one-time purchase. Do not plan a live job around it yet. Questions can go to the same desk as the other two tools.</p>
+        </div>
+    </section>
+
     <section class="section">
         <div class="wrap">
             <div class="roi">
@@ -263,6 +301,6 @@
         <p class="foot-copy">© 2026 LockStep Tools / ReadySetPDF LLC. LockStepPDF was ReadySetPDF. LockStepOCR was ReadySetOCR.</p>
     </div>
 </footer>
-<script src="Assets/js/site.js"></script>
+<script src="assets/js/site.js"></script>
 </body>
 </html>

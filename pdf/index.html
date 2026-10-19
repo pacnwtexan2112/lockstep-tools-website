@@ -14,18 +14,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
-    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="pdf.css">
     <meta property="og:title" content="LockStepPDF — Prepress Software for Print Shops">
     <meta property="og:description" content="Formerly ReadySetPDF. Resize, crop, rotate, impose, and mark a press sheet on your own Windows PC. Download 3.54.">
-    <meta property="og:image" content="https://locksteptools.com/Assets/img/locksteppdf.jpg">
+    <meta property="og:image" content="https://locksteptools.com/assets/img/locksteppdf.jpg">
     <meta property="og:url" content="https://locksteptools.com/pdf/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="LockStep Tools">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LockStepPDF — Prepress Software for Print Shops">
     <meta name="twitter:description" content="Formerly ReadySetPDF. Local Windows prepress. Download 3.54.">
-    <meta name="twitter:image" content="https://locksteptools.com/Assets/img/locksteppdf.jpg">
+    <meta name="twitter:image" content="https://locksteptools.com/assets/img/locksteppdf.jpg">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9R888JBBB0"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -57,7 +57,7 @@
           "applicationSubCategory": "Prepress",
           "description": "Subscription prepress software for print shops. Version 3.54 is the current installer and includes Resize, Crop, Rotate, Cutter, Monkey, Grid, and Booklet. The subscription price is not published on this page.",
           "downloadUrl": "https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/v3.5/ReadySetPDF_v3.54_Setup.exe",
-          "screenshot": "https://locksteptools.com/Assets/img/locksteppdf.jpg",
+          "screenshot": "https://locksteptools.com/assets/img/locksteppdf.jpg",
           "featureList": ["Resize", "Crop", "Rotate", "Cutter", "Monkey", "Grid", "Booklet"],
           "publisher": { "@id": "https://locksteptools.com/#organization" }
         }
@@ -178,36 +178,43 @@
                     <p class="tool-no">01</p>
                     <h3>Resize</h3>
                     <p>Map a client PDF to Letter, Tabloid, or a width and height you type. Force landscape when the stock is turned. Stretch the art to the bounding box, or leave the aspect ratio and center it. The trim box follows.</p>
+                    <p class="example"><strong>On the desk.</strong> A customer sends one business card as a loose page that is not the finished size, or a flyer built to a page the press is not running. Resize maps that page to the card you will cut, or to Letter or Tabloid, before Grid or anyone else touches it.</p>
                 </li>
                 <li class="card" id="crop">
                     <p class="tool-no">02</p>
                     <h3>Crop</h3>
                     <p>On import, keep the original boxes, set CropBox to TrimBox, or clip the extra margin back to TrimBox. Preview, export, and the steps you stack all use that choice. Monkey, Grid, and Booklet can impose to the TrimBox instead of the MediaBox.</p>
+                    <p class="example"><strong>On the desk.</strong> The art is a 3.5×2 card, but the media box is a wide white field around the trim. Step the media box and the gutter is a lie. Crop sets the crop box to the trim box, or clips that extra margin, so the next tool sees the piece you will actually cut.</p>
                 </li>
                 <li class="card" id="rotate">
                     <p class="tool-no">03</p>
                     <h3>Rotate</h3>
                     <p>Turn the page into the orientation the press sheet wants before the next step. It sits with Resize and Crop, which is where orientation problems actually show up.</p>
+                    <p class="example"><strong>On the desk.</strong> A letter that must become landscape. The page was built portrait. The digital press is loaded the other way. Rotate puts the page in the orientation the sheet wants before Crop or Grid.</p>
                 </li>
                 <li class="card" id="cutter">
                     <p class="tool-no">04</p>
                     <h3>Cutter</h3>
                     <p>Crop marks in black or white, with positive or negative overlap so the mark crosses into the trim or sits off it. Cutter L, registration, and dots land on the four corners for Monkey, Grid, and Booklet.</p>
+                    <p class="example"><strong>On the desk.</strong> A gang of cards is imposed and still has no marks. Bindery cannot see the corners. Cutter draws the L marks, registration, and dots, in black on a light sheet or white when the stock would swallow black, so the operator is not cutting to a guess.</p>
                 </li>
                 <li class="card" id="monkey">
                     <p class="tool-no">05</p>
                     <h3>Monkey</h3>
                     <p>The imposition tab beside Grid and Booklet. Use it when the sheet is not a plain step-and-repeat and not a saddle stitch. It honors TrimBox and takes the same crop marks as the other two.</p>
+                    <p class="example"><strong>On the desk.</strong> The form is a door hanger, a rack card, and a postcard. That is not a stack of the same card, and it is not a booklet. Monkey is the imposition for a sheet that is not a simple grid.</p>
                 </li>
                 <li class="card" id="grid">
                     <p class="tool-no">06</p>
                     <h3>Grid</h3>
                     <p>Step and repeat. Set rows, columns, and gutter, then lock a selection so the pieces stay put when the grid changes. A 3×3 white-space anchor pads from the cell you pick. Built for cards, tags, and labels on 12×18 and 13×19.</p>
+                    <p class="example"><strong>On the desk.</strong> Business cards on 13×19. One finished card, repeated in rows and columns, with a gutter the cutter can use. Lock the selection so a change to the count does not shove the pieces. The same step covers tags and labels on 12×18.</p>
                 </li>
                 <li class="card" id="booklet">
                     <p class="tool-no">07</p>
                     <h3>Booklet</h3>
                     <p>Paginate a reader file into 2-up printer spreads. Creep is the paper thickness; each inner sheet adds that amount. Outward moves content toward the spine. Inward opens the gutter. The same 3×3 anchor Grid uses can pad the margins.</p>
+                    <p class="example"><strong>On the desk.</strong> A 32-page program, saddle stitched. Without creep, the face trim shears the outer pages short and the center pages stick out. Creep is that paper thickness, added for each inner sheet. Outward pulls content toward the spine. Inward opens the gutter.</p>
                 </li>
             </ul>
 
@@ -270,7 +277,7 @@
             <h2>The 3.54 window</h2>
             <p class="sub">Assets on the left, the step stack under them, the live page on the right. The title bar in this build still says ReadySetPDF.</p>
             <figure>
-                <img src="../Assets/img/locksteppdf.jpg" alt="LockStepPDF 3.54 window, still titled ReadySetPDF, with Resize, Crop, Monkey, Grid, Booklet, Cutter, and Rotate, plus Pro tools marked with an asterisk" width="1908" height="1025">
+                <img src="../assets/img/locksteppdf.jpg" alt="LockStepPDF 3.54 window, still titled ReadySetPDF, with Resize, Crop, Monkey, Grid, Booklet, Cutter, and Rotate, plus Pro tools marked with an asterisk" width="1908" height="1025">
                 <figcaption>Version 3.54. Asterisks mark Mail Merge/Stamp, Color, Preflight, Automation, Unlock, and OCR Extract.</figcaption>
             </figure>
         </div>
@@ -429,7 +436,7 @@
     </div>
 </div>
 
-<script src="../Assets/js/site.js"></script>
+<script src="../assets/js/site.js"></script>
 <script>
     var INSTALLER = "https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/v3.5/ReadySetPDF_v3.54_Setup.exe";
     document.querySelectorAll("form.dl-form").forEach(function (form) {

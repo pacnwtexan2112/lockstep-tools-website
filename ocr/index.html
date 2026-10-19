@@ -13,11 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
-    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="ocr.css">
     <meta property="og:title" content="LockStepOCR — Watch-Folder OCR for Print Shops">
     <meta property="og:description" content="Formerly ReadySetOCR. Three pipelines write a searchable PDF and leave the original page size alone.">
-    <meta property="og:image" content="https://locksteptools.com/Assets/img/lockstepocr.jpg">
+    <meta property="og:image" content="https://locksteptools.com/assets/img/lockstepocr.jpg">
     <meta property="og:url" content="https://locksteptools.com/ocr/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="LockStep Tools">
@@ -109,19 +109,19 @@
         <div class="wrap">
             <p class="kicker">The engine</p>
             <h2>One master switch. Three pipelines.</h2>
-            <p class="sub">Each pipeline has its own watch folder, output folder, file name, and what happens after the file is written. Start the master engine when the folders are set. The status line stays idle until a file lands.</p>
+            <p class="sub">A scan or a flat PDF has pixels and no text. You cannot search it for the name that should have been on the piece, and you cannot archive it as words. LockStepOCR watches folders and writes a searchable PDF at the same page size. The original is not deleted. Each pipeline has its own watch folder, output folder, file name, and what happens after the file is written. Start the master engine when the folders are set. The status line stays idle until a file lands.</p>
             <div class="pipes">
                 <article class="pipe">
                     <strong>Pipeline 1</strong>
-                    <p>Its own inbox and outbox. Use it for the job type you run every day, with a prefix and suffix you can recognize in the RIP folder.</p>
+                    <p>The daily scan tray. The copier or the front-counter scanner drops the day’s order forms, proofs, and signed tickets into one inbox. This pipeline watches that folder and writes the searchable file to its own outbox, with a prefix and suffix you can recognize in the RIP folder. The build shown here defaults the prefix to Searchable_OCR_. The original scan stays where it landed.</p>
                 </article>
                 <article class="pipe">
                     <strong>Pipeline 2</strong>
-                    <p>A second watch, so a different kind of scan does not have to share a naming rule with the first.</p>
+                    <p>A different naming rule, on purpose. A second customer, or a second kind of scan, should not have to share the first pipeline’s prefix. Give this watch its own inbox, its own outbox, and its own prefix, original name, and suffix. A production tray and an archive tray can run at the same time without one renaming rule overwriting the other.</p>
                 </article>
                 <article class="pipe">
                     <strong>Pipeline 3</strong>
-                    <p>A third watch for the leftover tray: walk-up scans, archive pulls, or a customer who only sends pictures of the artwork.</p>
+                    <p>The leftover walk-up scan. Someone at the counter scans a previous job, an old form, or a picture of the artwork, and it should not fall into the daily production inbox. The third watch is that leftover tray. Same idea as the other two: its own folders, a searchable PDF, the original page size kept, the original file left in place.</p>
                 </article>
             </div>
 
@@ -157,7 +157,7 @@
             <h2>LockStepOCR on the desk</h2>
             <p class="sub">The window in current builds still says ReadySetOCR. The product name on this site is LockStepOCR.</p>
             <figure>
-                <img src="../Assets/img/lockstepocr.jpg" alt="LockStepOCR window, titled ReadySetOCR Multi-Pipeline Engine, with three pipelines, watch and output folders, and a start button" width="1908" height="1025">
+                <img src="../assets/img/lockstepocr.jpg" alt="LockStepOCR window, titled ReadySetOCR Multi-Pipeline Engine, with three pipelines, watch and output folders, and a start button" width="1908" height="1025">
                 <figcaption>Multi-pipeline engine. Download 2.4. This picture is the 2.3 window; the layout is the same.</figcaption>
             </figure>
         </div>
@@ -212,7 +212,7 @@
         <p class="foot-copy">© 2026 LockStep Tools / ReadySetPDF LLC. Darren Moeller.</p>
     </div>
 </footer>
-<script src="../Assets/js/site.js"></script>
+<script src="../assets/js/site.js"></script>
 <script>
     var INSTALLER = "https://github.com/pacnwtexan2112/ReadySetOCR/releases/download/LockStepOCR/LockStepOCR-Setup-2.4.0.exe";
     document.getElementById("ocr-installer").addEventListener("click", function () {

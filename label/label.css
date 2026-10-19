@@ -1,0 +1,35 @@
+/* LockStepLabel — under development */
+
+.status {
+    max-width: 40rem;
+    margin: 2rem auto 0;
+    text-align: left;
+    background: var(--paper);
+    color: var(--navy);
+    border-radius: 16px;
+    padding: 1.5rem 1.5rem 1.35rem;
+    box-shadow: var(--shadow);
+}
+
+.status h2 {
+    font-size: 1.55rem;
+    margin: 0.35rem 0 0;
+}
+
+.status ul {
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.status li {
+    padding: 0.55rem 0;
+    border-top: 1px solid var(--border);
+    font-weight: 600;
+}
+
+.status li span {
+    display: block;
+    font-weight: 450;
+    color: var(--muted);
+}

@@ -1,0 +1,60 @@
+/* LockStepOCR page */
+
+.pipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.pipe {
+    background: var(--paper);
+    border-radius: 16px;
+    padding: 1.35rem;
+    box-shadow: var(--shadow);
+}
+
+.pipe strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+}
+
+.pipe p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+.spec {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background: var(--paper);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.spec th,
+.spec td {
+    text-align: left;
+    padding: 0.85rem 1.1rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+}
+
+.spec th {
+    width: 34%;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--steel);
+    font-weight: 700;
+}
+
+.spec tr:last-child th,
+.spec tr:last-child td { border-bottom: 0; }
+
+@media (max-width: 800px) {
+    .pipes { grid-template-columns: 1fr; }
+    .spec th { width: auto; }
+}

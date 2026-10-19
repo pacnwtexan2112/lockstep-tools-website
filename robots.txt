@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://readysetpdf.vercel.app/sitemap.xml
+Sitemap: https://locksteptools.com/sitemap.xml

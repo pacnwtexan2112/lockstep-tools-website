@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>LockStep Tools — Local-First Desktop Software for Print & Prepress</title>
-    <meta name="description" content="Local-first Windows software for commercial print shops and prepress departments. Automated hot folders, imposition, OCR, and prepress tooling without cloud dependencies.">
-    <meta name="keywords" content="prepress automation software, print shop tools, PDF imposition, OCR watch folders, variable data printing, commercial printing utilities, LockStep Tools">
+    <title>LockStep Tools — Software for the Print Industry</title>
+    <meta name="description" content="LockStep Tools builds Windows software for commercial print shops. LockStepPDF is a subscription. LockStepOCR is free. LockStepLabel is under development and will be a one-time purchase.">
+    <meta name="keywords" content="print industry software, prepress software, commercial print tools, LockStep Tools, LockStepPDF, LockStepOCR, imposition software, OCR for print shops">
     <meta name="author" content="Darren Moeller">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#19123D">
-
+    <meta name="google-site-verification" content="7j_TEK6WKBoPwYGm_FcRZWtwU9vM__-nwWVwKI1yAdY">
     <link rel="canonical" href="https://locksteptools.com/">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap">
-    <link rel="stylesheet" href="/assets/css/style.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <meta property="og:title" content="LockStep Tools — Software for the Print Industry">
+    <meta property="og:description" content="Windows software for commercial print. LockStepPDF for the prepress desk. LockStepOCR for searchable scans. Local, on your hardware.">
+    <meta property="og:url" content="https://locksteptools.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LockStep Tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LockStep Tools — Software for the Print Industry">
+    <meta name="twitter:description" content="Prepress and OCR software for print shops. Local on Windows. Files stay in the building.">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9R888JBBB0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9R888JBBB0');
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -28,16 +41,16 @@
           "name": "LockStep Tools",
           "legalName": "ReadySetPDF LLC",
           "url": "https://locksteptools.com",
-          "email": "darren@readysetpdf.com"
+          "email": "darren@readysetpdf.com",
+          "founder": { "@type": "Person", "name": "Darren Moeller" }
         },
         {
           "@type": "WebSite",
           "@id": "https://locksteptools.com/#website",
           "url": "https://locksteptools.com",
           "name": "LockStep Tools",
-          "publisher": {
-            "@id": "https://locksteptools.com/#organization"
-          },
+          "description": "Windows software for commercial print shops.",
+          "publisher": { "@id": "https://locksteptools.com/#organization" },
           "inLanguage": "en-US"
         }
       ]
@@ -45,21 +58,27 @@
     </script>
 </head>
 <body>
-<a class="skip" href="#suite">Skip to content</a>
+<a class="skip" href="#software">Skip to content</a>
 
 <header class="site-header">
     <div class="inner">
-        <a class="brand" href="/">LockStep Tools</a>
+        <a class="brand" href="./">
+            <svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+                <circle cx="16" cy="16" r="5.5" fill="none" stroke="currentColor" stroke-width="1.75"/>
+                <path d="M16 1.5v7.5M16 23v7.5M1.5 16h7.5M23 16h7.5" stroke="currentColor" stroke-width="1.75"/>
+            </svg>
+            LockStep Tools
+        </a>
         <nav class="nav-links" aria-label="Primary">
-            <a href="#suite">Software Suite</a>
-            <a href="#philosophy">Why LockStep</a>
-            <a href="/pdf/">LockStepPDF</a>
-            <a href="/ocr/">LockStepOCR</a>
-            <a href="/label/">LockStepLabel</a>
+            <a href="#software">Software</a>
+            <a href="#floor">The shop floor</a>
+            <a href="pdf/">LockStepPDF</a>
+            <a href="ocr/">LockStepOCR</a>
+            <a href="label/">LockStepLabel</a>
         </nav>
         <div>
-            <a class="btn btn-lime btn-sm desk-download" href="/pdf/">Explore LockStepPDF</a>
-            <button class="menu-btn" type="button" aria-label="Open menu" onclick="openDrawer()">
+            <a class="btn btn-lime btn-sm desk-download" href="pdf/">Open LockStepPDF</a>
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" onclick="openDrawer()">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
             </button>
         </div>
@@ -70,13 +89,13 @@
     <div class="drawer-bg" onclick="closeDrawer()"></div>
     <div class="drawer-panel">
         <h2>LockStep Tools</h2>
-        <nav>
-            <a href="#suite" onclick="closeDrawer()">Software Suite</a>
-            <a href="#philosophy" onclick="closeDrawer()">Why LockStep</a>
-            <a href="/pdf/" onclick="closeDrawer()">LockStepPDF</a>
-            <a href="/ocr/" onclick="closeDrawer()">LockStepOCR</a>
-            <a href="/label/" onclick="closeDrawer()">LockStepLabel</a>
-            <a class="btn btn-lime" style="margin-top:1rem;" href="/pdf/" onclick="closeDrawer()">Explore Flagship</a>
+        <nav aria-label="Mobile">
+            <a href="#software" onclick="closeDrawer()">Software</a>
+            <a href="#floor" onclick="closeDrawer()">The shop floor</a>
+            <a href="pdf/" onclick="closeDrawer()">LockStepPDF</a>
+            <a href="ocr/" onclick="closeDrawer()">LockStepOCR</a>
+            <a href="label/" onclick="closeDrawer()">LockStepLabel</a>
+            <a class="btn btn-lime" style="margin-top:1rem;" href="pdf/" onclick="closeDrawer()">Open LockStepPDF</a>
         </nav>
     </div>
 </div>
@@ -85,61 +104,165 @@
     <section class="hero">
         <div class="crop-frame">
             <div class="hero-inner">
-                <p class="hook">Industrial-Grade Print Software</p>
-                <div style="margin: 1.5rem 0 1.25rem;">
-                    <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto;">
-                        <rect x="3" y="3" width="7" height="7"></rect>
-                        <rect x="14" y="3" width="7" height="7"></rect>
-                        <rect x="14" y="14" width="7" height="7"></rect>
-                        <rect x="3" y="14" width="7" height="7"></rect>
-                    </svg>
-                </div>
-                <p class="eyebrow">ReadySetPDF LLC · DBA LockStep Tools</p>
-                <h1>Precision prepress tools that stay locked in step with production</h1>
-                <p class="lede">Purpose-built Windows software engineered for press operators, prepress technicians, and print business owners. 100% offline, native processing with zero per-click metered fees.</p>
+                <p class="hook">Software for the print industry</p>
+                <p class="eyebrow" style="margin-top:1.25rem;">LockStep Tools · ReadySetPDF LLC</p>
+                <h1>Prepress software that stays in step with the shop</h1>
+                <p class="lede">We build Windows programs for commercial print. LockStepPDF is a subscription. LockStepOCR is free. LockStepLabel is under development and will be a one-time purchase. The file stays on your hardware.</p>
                 <div class="cta-row">
-                    <a class="btn btn-lime btn-lg" href="#suite">Explore The Suite</a>
-                    <a class="btn btn-inverse btn-lg" href="/pdf/">LockStepPDF Flagship →</a>
+                    <a class="btn btn-lime btn-lg" href="#software">See the software</a>
+                    <a class="btn btn-inverse btn-lg" href="pdf/">LockStepPDF</a>
                 </div>
-                <p class="meta-line">
-                    Local execution &nbsp;·&nbsp; No cloud uploads &nbsp;·&nbsp; Commercial multi-seat licensing
-                </p>
+                <p class="meta-line">Local processing · No account · Built for a prepress PC, not a browser tab</p>
             </div>
         </div>
     </section>
 
-    <section class="section" id="suite">
+    <section class="section" id="software">
         <div class="wrap">
-            <p class="kicker">The LockStep Suite</p>
-            <h2>Engineered for every stage of print preparation</h2>
-            <p class="sub">Each tool in the LockStep ecosystem runs independently on your workstation or network drive, targeting critical production bottlenecks without subscription bloat.</p>
-            
-            <div class="grid-3">
-                <article class="card">
+            <p class="kicker">The line</p>
+            <h2>Three programs. One shop.</h2>
+            <p class="sub">LockStepPDF is a subscription. LockStepOCR is free. LockStepLabel is under development and will be a one-time purchase — there is no download and nothing to buy yet. ReadySetPDF is now LockStepPDF. ReadySetOCR is now LockStepOCR.</p>
+            <div class="suite">
+                <article class="ticket">
                     <div class="row-between">
-                        <h3>LockStepPDF</h3>
                         <span class="badge badge-navy">Flagship</span>
+                        <span class="badge">v3.54</span>
                     </div>
-                    <p>Automated hot-folder pipelines, VDP mail merge, saddle-stitch booklet creation, step-and-repeat imposition, and press-side preflight verification.</p>
-                    <div class="cta-row" style="justify-content: flex-start; margin-top: 1.5rem;">
-                        <a class="btn btn-navy btn-sm" href="/pdf/">View LockStepPDF →</a>
+                    <h3>LockStepPDF</h3>
+                    <p class="role">Subscription · formerly ReadySetPDF</p>
+                    <p>The prepress desk: size the page, crop to the box, rotate, impose, and put cutter marks on the sheet. Seven tools are in the current download. Six more are in the window, marked for Pro.</p>
+                    <ul aria-label="Tools in the 3.54 download">
+                        <li>Resize</li>
+                        <li>Crop</li>
+                        <li>Rotate</li>
+                        <li>Cutter</li>
+                        <li>Monkey</li>
+                        <li>Grid</li>
+                        <li>Booklet</li>
+                    </ul>
+                    <div class="cta-row">
+                        <a class="btn btn-lime" href="pdf/">Open LockStepPDF</a>
                     </div>
                 </article>
-
-                <article class="card">
+                <article class="ticket secondary">
                     <div class="row-between">
-                        <h3>LockStepOCR</h3>
-                        <span class="badge badge-outline">Production Tool</span>
+                        <span class="badge">Shipping</span>
+                        <span class="badge badge-outline">v2.4</span>
                     </div>
-                    <p>Watched-folder batch OCR automation. Ingests raster artwork, legacy scans, or flats and generates high-accuracy searchable PDFs retaining exact trim geometry.</p>
-                    <div class="cta-row" style="justify-content: flex-start; margin-top: 1.5rem;">
-                        <a class="btn btn-outline btn-sm" href="/ocr/">View LockStepOCR →</a>
+                    <h3>LockStepOCR</h3>
+                    <p class="role">Free · formerly ReadySetOCR</p>
+                    <p>A separate engine for scans and flat PDFs. Three pipelines, each with a watch folder and an output folder. The finished file is searchable and keeps the original page size.</p>
+                    <ul aria-label="LockStepOCR at a glance">
+                        <li>3 pipelines</li>
+                        <li>Watch folders</li>
+                        <li>Searchable PDF</li>
+                    </ul>
+                    <div class="cta-row">
+                        <a class="btn btn-navy" href="ocr/">Open LockStepOCR</a>
                     </div>
                 </article>
-
-                <article class="card">
+                <article class="ticket pending">
                     <div class="row-between">
-                        <h3>LockStepLabel</h3>
                         <span class="badge badge-outline">In Development</span>
+                        <span class="badge">One-time purchase</span>
                     </div>
-                    <p>
+                    <h3>LockStepLabel</h3>
+                    <p class="role">Under development · not for sale yet</p>
+                    <p class="dev-note"><strong>Under development.</strong> LockStepLabel is not a download. There is no installer and no buy button. When it ships, it will be a one-time purchase. No price is posted yet.</p>
+                    <div class="cta-row">
+                        <a class="btn btn-outline" href="label/">Read the development note</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-tight" id="floor">
+        <div class="wrap">
+            <p class="kicker">How a job moves</p>
+            <h2>From the file the customer sent to a sheet the bindery can cut</h2>
+            <p class="sub">LockStep is the pace of a shop that already knows the next step. The software is named for that, not for a cloud queue.</p>
+            <ol class="flow">
+                <li>
+                    <h3>Land the file</h3>
+                    <p>The PDF stays on the prepress PC or the shop server. Nothing has to upload before you can work.</p>
+                </li>
+                <li>
+                    <h3>Fit the page</h3>
+                    <p>Resize, crop, and rotate until the art matches the stock and the box you will actually cut.</p>
+                </li>
+                <li>
+                    <h3>Impose</h3>
+                    <p>Monkey, Grid, or Booklet. Step a card, gang a sheet, or paginate a saddle-stitch job with creep.</p>
+                </li>
+                <li>
+                    <h3>Mark it</h3>
+                    <p>Cutter puts L marks, registration, and dots where finishing expects them. Black or white.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="roi">
+                <p class="kicker">Why a print shop buys this</p>
+                <h2>The margin is in the minutes before the press starts</h2>
+                <div class="principles">
+                    <div>
+                        <h3>Local, on purpose</h3>
+                        <p>Customer lists, healthcare mail, and press files do not need a round trip through someone else’s server. LockStep runs on Windows in the shop.</p>
+                    </div>
+                    <div>
+                        <h3>Named prepress steps</h3>
+                        <p>Resize, Crop, Monkey, Grid, Booklet, Cutter, Rotate. These are the buttons in the 3.54 window, not a generic PDF editor with a print theme.</p>
+                    </div>
+                    <div>
+                        <h3>A second tool when the scan is dead</h3>
+                        <p>LockStepOCR is its own program. Three pipelines watch folders and write a searchable PDF. It is not buried inside a viewer.</p>
+                    </div>
+                    <div>
+                        <h3>Written from the desk</h3>
+                        <p>LockStep Tools is Darren Moeller, ReadySetPDF LLC. Support goes to a person who already speaks trim, creep, and a hot folder.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="band section" id="name">
+        <div class="wrap band-grid">
+            <div>
+                <p class="kicker">The name change</p>
+                <h2>ReadySet was the product. LockStep is the company.</h2>
+                <p class="sub">The installer you already have may still say ReadySetPDF. That file is LockStepPDF 3.54, and the product is a subscription. ReadySetOCR 2.4 is LockStepOCR, and that tool is free. LockStepLabel is under development. It will be a one-time purchase when it ships. It is not for sale now.</p>
+            </div>
+            <div class="cta-row" style="justify-content:flex-start; margin-top:0;">
+                <a class="btn btn-lime btn-lg" href="pdf/">Read LockStepPDF</a>
+                <a class="btn btn-inverse btn-lg" href="label/">LockStepLabel note</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="wrap">
+        <div class="foot-top">
+            <div>
+                <p style="font-family:var(--font-display);font-size:1.2rem;margin:0;">LockStep Tools</p>
+                <p style="color:var(--muted);font-size:0.9rem;max-width:26rem;margin-bottom:0;">Windows software for commercial print. Built by Darren Moeller, ReadySetPDF LLC.</p>
+            </div>
+            <nav class="foot-nav" aria-label="Footer">
+                <a href="pdf/">LockStepPDF</a>
+                <a href="ocr/">LockStepOCR</a>
+                <a href="label/">LockStepLabel</a>
+                <a href="mailto:darren@readysetpdf.com">darren@readysetpdf.com</a>
+                <a href="legal/">Terms, privacy, refunds</a>
+            </nav>
+        </div>
+        <p class="foot-copy">© 2026 LockStep Tools / ReadySetPDF LLC. LockStepPDF was ReadySetPDF. LockStepOCR was ReadySetOCR.</p>
+    </div>
+</footer>
+<script src="Assets/js/site.js"></script>
+</body>
+</html>

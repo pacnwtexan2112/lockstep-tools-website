@@ -252,6 +252,21 @@ button, summary { font-family: inherit; cursor: pointer; }
 .hero-inner { max-width: 820px; margin: 0 auto; text-align: center; }
 .hero-inner.left { text-align: left; margin: 0; max-width: 40rem; }
 
+.brand-lockup {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 1.75rem;
+}
+
+.brand-lockup img {
+    width: 260px;
+    max-width: min(260px, 78vw);
+    height: auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 16px 40px -18px rgb(0 0 0 / 0.55);
+}
+
 .hook {
     display: inline-block;
     background: var(--lime);

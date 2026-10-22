@@ -63,7 +63,7 @@
             <a href="#download">Download</a>
         </nav>
         <div>
-            <a class="btn btn-lime btn-sm desk-download" href="#download">Download 2.4</a>
+            <a class="btn btn-lime btn-sm desk-download" href="https://github.com/pacnwtexan2112/ReadySetOCR/releases/download/LockStepOCR/LockStepOCR-Setup-2.4.0.exe">Download 2.4</a>
             <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" onclick="openDrawer()">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
             </button>
@@ -80,7 +80,7 @@
             <a href="../pdf/" onclick="closeDrawer()">LockStepPDF</a>
             <a href="../label/" onclick="closeDrawer()">LockStepLabel</a>
             <a href="#engine" onclick="closeDrawer()">The engine</a>
-            <a class="btn btn-lime" style="margin-top:1rem;" href="#download" onclick="closeDrawer()">Download 2.4</a>
+            <a class="btn btn-lime" style="margin-top:1rem;" href="https://github.com/pacnwtexan2112/ReadySetOCR/releases/download/LockStepOCR/LockStepOCR-Setup-2.4.0.exe">Download 2.4</a>
         </nav>
     </div>
 </div>
@@ -97,7 +97,7 @@
                 <h1>Unlimited OCR pipelines. All at once.</h1>
                 <p class="lede">Put the scans to bed. We’ll take the night shift. Each pipeline watches a folder for a scan or a flat PDF and writes a searchable PDF with a text layer at the original page size. The source file stays in the watch folder. There is no cap on how many run together.</p>
                 <div class="cta-row">
-                    <a class="btn btn-lime btn-lg" href="#download">Download 2.4</a>
+                    <a class="btn btn-lime btn-lg" href="https://github.com/pacnwtexan2112/ReadySetOCR/releases/download/LockStepOCR/LockStepOCR-Setup-2.4.0.exe">Download 2.4</a>
                     <a class="btn btn-inverse btn-lg" href="../pdf/">Back to LockStepPDF</a>
                 </div>
                 <p class="meta-line">Unlimited pipelines. The employee that never clocks out.</p>
@@ -184,10 +184,9 @@
                 <h2>Download LockStepOCR 2.4</h2>
                 <p class="sub">Windows installer. No account. Need a tool, send an email.</p>
                 <div class="cta-row">
-                    <button class="btn btn-lime btn-lg" type="button" id="ocr-installer">Download installer</button>
+                    <a class="btn btn-lime btn-lg" href="https://github.com/pacnwtexan2112/ReadySetOCR/releases/download/LockStepOCR/LockStepOCR-Setup-2.4.0.exe">Download installer</a>
                     <a class="btn btn-outline btn-lg" href="mailto:darren@locksteptools.com?subject=LockStepOCR%20question">Email support</a>
                 </div>
-                <p class="dl-note" id="ocr-installer-note" hidden>The installer link is not posted yet.</p>
             </div>
         </div>
     </section>
@@ -212,17 +211,5 @@
     </div>
 </footer>
 <script src="../assets/js/site.js"></script>
-<script>
-    var INSTALLER = "https://github.com/pacnwtexan2112/ReadySetOCR/releases/download/LockStepOCR/LockStepOCR-Setup-2.4.0.exe";
-    document.getElementById("ocr-installer").addEventListener("click", function () {
-        var note = document.getElementById("ocr-installer-note");
-        if (!INSTALLER) {
-            note.hidden = false;
-            note.textContent = "The installer link is not posted yet.";
-            return;
-        }
-        window.location.href = INSTALLER;
-    });
-</script>
 </body>
 </html>

@@ -212,6 +212,17 @@ button, summary { font-family: inherit; cursor: pointer; }
 .btn-inverse:hover { background: var(--lime); color: var(--navy); }
 .btn-lg { height: 48px; padding: 0 1.5rem; font-size: 1rem; }
 .btn-sm { height: 36px; padding: 0 0.9rem; font-size: 0.85rem; }
+.btn-soon,
+.btn-soon:hover,
+.btn-soon:active {
+    background: #C8C2B8;
+    color: #5C564E;
+    border-color: #C8C2B8;
+    cursor: not-allowed;
+    pointer-events: none;
+    filter: none;
+    transform: none;
+}
 
 .badge {
     display: inline-flex;

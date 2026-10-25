@@ -688,6 +688,42 @@ footer { border-top: 1px solid var(--border); }
     color: var(--steel);
 }
 
+.foot-copy a { color: var(--navy); font-weight: 650; }
+
+section[id] { scroll-margin-top: 4.75rem; }
+
+#manifesto p:not(.kicker),
+#manifesto li {
+    font-family: var(--font-display);
+    line-height: 1.65;
+}
+
+.manifesto-lead {
+    font-family: var(--font-display);
+    font-size: clamp(1.55rem, 2.8vw, 2.05rem);
+    line-height: 1.35;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin: 1.25rem 0 0;
+    max-width: 38rem;
+}
+
+.price-tag {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0.85rem 0 0;
+}
+
+.price-alt {
+    margin: 0.35rem 0 0;
+    color: var(--steel);
+    font-weight: 650;
+}
+
+.note-stack { display: grid; gap: 0.85rem; margin-top: 1.5rem; }
+.note-stack .dev-note { margin: 0; }
+
 .modal {
     display: none;
     position: fixed;

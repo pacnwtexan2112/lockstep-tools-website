@@ -806,7 +806,7 @@ section[id] { scroll-margin-top: 4.75rem; }
 .tab-panel.active { display: block; }
 .tab-panel a { color: var(--navy); font-weight: 650; }
 
-@media (max-width: 1180px) {
+@media (max-width: 900px) {
     .nav-links, .desk-download { display: none; }
     .menu-btn { display: inline-flex; }
 }

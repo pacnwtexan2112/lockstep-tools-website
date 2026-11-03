@@ -49,8 +49,8 @@ document.addEventListener("click", function (event) {
 
 var DOWNLOADS = {
     "LockStepOCR": {
-        file: "LockStepOCR-Setup-2.4.0.exe",
-        url: "https://github.com/pacnwtexan2112/ReadySetOCR/releases/download/LockStepOCR/LockStepOCR-Setup-2.4.0.exe"
+        file: "LockStepOCR-Setup-2.5.0.exe",
+        url: "https://github.com/pacnwtexan2112/ReadySetOCR/releases/download/LockStepOCR/LockStepOCR-Setup-2.5.0.exe"
     },
     "LockStep Label": {
         file: "LockStepLabel.exe",
@@ -119,12 +119,7 @@ function openDownload(app) {
 }
 
 function startDownload(url) {
-    var link = document.createElement("a");
-    link.href = url;
-    link.rel = "noopener";
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
+    window.location.assign(url);
 }
 
 function submitDownload(event) {

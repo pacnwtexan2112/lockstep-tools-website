@@ -1,0 +1,297 @@
+/* LockStepPDF help center. Same job as Help in the program:
+   search, a grouped topic list, the article, related topics. */
+
+.help-hero .crop-frame {
+    padding: 2.6rem 1.5rem 2.2rem;
+}
+
+.help-hero .hero-inner {
+    max-width: 46rem;
+    margin: 0;
+    text-align: left;
+}
+
+.help-hero h1 {
+    font-size: clamp(2.1rem, 4vw, 3.15rem);
+    margin: 0.35rem 0 0;
+}
+
+.help-hero .lede {
+    margin: 0.75rem 0 0;
+    max-width: 38rem;
+}
+
+.help-bar {
+    position: sticky;
+    top: 64px;
+    z-index: 6;
+    background: var(--cream);
+    padding: 0.75rem 0 0.65rem;
+}
+
+.help-search {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    min-height: 48px;
+    padding: 0.2rem 0.2rem 0.2rem 0.9rem;
+    background: var(--paper);
+    color: var(--navy);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.help-search label {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--steel);
+}
+
+.help-search input {
+    flex: 1;
+    min-width: 0;
+    height: 44px;
+    border: 0;
+    background: transparent;
+    color: var(--navy);
+    font: inherit;
+    font-size: 1rem;
+}
+
+.help-search input:focus { outline: none; }
+
+.help-search input::-webkit-search-cancel-button { display: none; }
+
+.help-search:focus-within {
+    outline: 2px solid var(--lime);
+    outline-offset: 3px;
+}
+
+.help-count {
+    margin: 0;
+    color: var(--steel);
+    font-size: 0.85rem;
+    font-weight: 650;
+}
+
+.help-desk {
+    padding: 0 0 3.5rem;
+}
+
+.help-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 0.5rem;
+}
+
+.help-toolbar .btn { background: var(--paper); }
+
+.help-toolbar .btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.help-layout {
+    display: grid;
+    grid-template-columns: minmax(210px, 280px) minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+}
+
+.help-tree {
+    position: sticky;
+    top: 168px;
+    max-height: calc(100vh - 184px);
+    overflow: auto;
+    background: var(--paper);
+    border-radius: 12px;
+    padding: 0.55rem 0.45rem 0.8rem;
+    box-shadow: var(--shadow);
+}
+
+.help-group {
+    margin: 0.85rem 0.7rem 0.2rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--steel);
+}
+
+.help-group:first-child { margin-top: 0.35rem; }
+
+.help-tree a {
+    display: block;
+    text-decoration: none;
+    color: var(--navy);
+    border-radius: 8px;
+    padding: 0.32rem 0.65rem;
+    font-size: 0.92rem;
+    font-weight: 650;
+    line-height: 1.35;
+}
+
+.help-tree a:hover { background: var(--pale); }
+
+.help-tree a[aria-current="page"] {
+    background: var(--lime);
+    color: var(--navy);
+}
+
+.help-tree a.help-section {
+    font-weight: 500;
+    font-size: 0.82rem;
+    color: var(--muted);
+    padding-left: 1.3rem;
+}
+
+.help-tree a.help-section[aria-current="true"] {
+    background: var(--pale);
+    color: var(--navy);
+}
+
+.help-none {
+    margin: 0.4rem 0.7rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.help-reader {
+    background: var(--paper);
+    border-radius: 12px;
+    padding: 1.45rem 1.6rem 1.2rem;
+    box-shadow: var(--shadow);
+    min-width: 0;
+}
+
+.js .help-article { display: none; }
+.js .help-article.is-current { display: block; }
+
+.help-reader .kicker { margin-bottom: 0.15rem; }
+
+.help-reader h2 {
+    font-size: clamp(1.85rem, 3vw, 2.45rem);
+    margin: 0;
+    scroll-margin-top: 200px;
+}
+
+.help-reader h3 {
+    font-size: 1.38rem;
+    margin: 1.55rem 0 0.15rem;
+    scroll-margin-top: 200px;
+}
+
+.help-reader p,
+.help-reader li {
+    font-size: 1.02rem;
+    overflow-wrap: anywhere;
+}
+
+.help-reader p { margin: 0.55rem 0 0; }
+
+.help-reader ol {
+    margin: 0.65rem 0 0;
+    padding-left: 1.3rem;
+}
+
+.help-reader li { margin: 0.38rem 0; padding-left: 0.2rem; }
+
+.help-reader a {
+    color: var(--navy);
+    font-weight: 650;
+    text-underline-offset: 0.16em;
+}
+
+mark.help-hit {
+    background: var(--lime);
+    color: var(--navy);
+    border-radius: 2px;
+    padding: 0 0.08em;
+    scroll-margin-top: 200px;
+    scroll-margin-bottom: 20vh;
+}
+
+mark.help-hit.is-current {
+    outline: 2px solid var(--navy);
+    outline-offset: 1px;
+}
+
+.help-related {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    margin-top: 1.8rem;
+    padding-top: 0.95rem;
+    border-top: 1px solid var(--border);
+}
+
+.help-related span {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--steel);
+    margin-right: 0.15rem;
+}
+
+.help-related a {
+    background: var(--pale);
+    border-radius: 999px;
+    padding: 0.28rem 0.7rem;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 650;
+}
+
+.help-related a:hover { background: var(--mint); }
+
+.help-related-none {
+    margin: 1.8rem 0 0;
+    padding-top: 0.95rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.88rem;
+    font-style: italic;
+}
+
+.help-empty {
+    display: none;
+    margin: 0;
+}
+
+.js .help-empty.is-on { display: block; }
+
+.help-empty h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); }
+
+a.help-entry-card {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+a.help-entry-card h3 { color: var(--navy); }
+
+a.help-entry-card:hover { box-shadow: var(--shadow-hover); }
+
+@media (max-width: 800px) {
+    .help-layout { grid-template-columns: 1fr; }
+    .help-tree {
+        position: static;
+        max-height: 240px;
+    }
+    .help-reader { padding: 1.15rem 1rem 1rem; }
+    .help-bar { position: static; }
+    .help-search { max-width: none; }
+}
+
+@media (max-width: 680px) {
+    .help-hero .crop-frame { padding: 2rem 1rem 1.6rem; }
+    .help-toolbar .btn { flex: 1 1 calc(50% - 0.45rem); }
+}

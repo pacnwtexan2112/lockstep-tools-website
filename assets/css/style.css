@@ -806,6 +806,63 @@ section[id] { scroll-margin-top: 4.75rem; }
 .tab-panel.active { display: block; }
 .tab-panel a { color: var(--navy); font-weight: 650; }
 
+button.text-link {
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    font-weight: 650;
+    color: var(--navy);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.download-gate .modal-content { width: min(440px, 100%); }
+
+.download-gate form {
+    display: grid;
+    gap: 0.7rem;
+    padding: 1.2rem 1.3rem 1.35rem;
+    background: var(--cream);
+}
+
+.download-gate .gate-note {
+    margin: 0 0 0.2rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.download-gate label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--steel);
+}
+
+.download-gate input[type="email"] {
+    width: 100%;
+    height: 48px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0 0.85rem;
+    font: inherit;
+    color: var(--navy);
+    background: var(--paper);
+}
+
+.download-gate .gate-status {
+    min-height: 1.3em;
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 650;
+}
+
+.download-gate .gate-status.is-error { color: #8c2f2f; }
+.download-gate .gate-status.is-ok { color: var(--navy); }
+
+.download-gate .btn { width: 100%; }
+
 @media (max-width: 900px) {
     .nav-links, .desk-download { display: none; }
     .menu-btn { display: inline-flex; }

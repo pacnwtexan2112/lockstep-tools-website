@@ -95,6 +95,7 @@
             <a href="#desk" aria-current="page">The desk</a>
             <a href="#prepress">Prepress</a>
             <a href="#automation">Automation</a>
+            <a href="help/">Help</a>
             <a href="../ocr/">LockStepOCR</a>
             <a href="../label/">LockStepLabel</a>
         </nav>
@@ -118,6 +119,7 @@
             <a href="#prepress" onclick="closeDrawer()">Prepress</a>
             <a href="#preflight" onclick="closeDrawer()">Preflight</a>
             <a href="#automation" onclick="closeDrawer()">Automation</a>
+            <a href="help/" onclick="closeDrawer()">Help</a>
             <a href="#faq" onclick="closeDrawer()">FAQ</a>
             <a href="../ocr/" onclick="closeDrawer()">LockStepOCR</a>
             <a href="../label/" onclick="closeDrawer()">LockStepLabel</a>
@@ -140,9 +142,10 @@
                     <p class="lede">Built for the shop floor, not the boardroom. We know what an unhandled PDF box does to a digital press at 4:00 PM on a Friday. Build the recipe once. Unlimited automation pipelines run it overnight.</p>
                     <div class="cta-row">
                         <button type="button" class="btn btn-lime btn-lg" disabled aria-disabled="true">Coming soon</button>
+                        <a class="btn btn-inverse btn-lg" href="help/">Help center</a>
                         <a class="btn btn-inverse btn-lg" href="mailto:support@locksteptools.com?subject=LockStepPDF%204.0">Email support</a>
                     </div>
-                    <p class="meta-line">$79.99/month, or $859.99/year ($100 off). Enterprise-grade power, Community-fueled, Zero corporate markup. Fully functional Pro for 30 days from the install date. Core tools remain free for life. They stay free and unlocked without a subscription. One workstation. LockStep Label and LockStepOCR are included.</p>
+                    <p class="meta-line">$79.99/month, or $859.99/year ($100 off). Enterprise-grade power, Community-fueled, Zero corporate markup. Fully functional Pro for 30 days from the install date. Core tools remain free for life. They stay free and unlocked without a subscription. One workstation. LockStep Label is included. LockStepOCR is free, and it is also included.</p>
                 </div>
                 <aside class="sheet" aria-label="How a LockStepPDF recipe is built">
                     <div class="sheet-top">
@@ -438,8 +441,8 @@
                 <li class="card" id="labelmaker">
                     <p class="tool-no">Label</p>
                     <h3>Labelmaker</h3>
-                    <p>Grid or place-each, with corner radius on a rectangle. Write a PDF, or send the sheet to a local printer at actual size. Units are inches, millimeters, or points. LockStep Label is a 30-day completely unlocked trial. After 30 days it is a one-time purchase of $39.99, and it is included with Pro. LockStepOCR is also included with Pro.</p>
-                    <p><a class="text-link" href="../label/">LockStep Label</a> · <a class="text-link" href="https://github.com/pacnwtexan2112/LockStepLabel/releases/download/v1.0.0/LockStepLabel.exe">Download 1.0</a></p>
+                    <p>Grid or place-each, with corner radius on a rectangle. Write a PDF, or send the sheet to a local printer at actual size. Units are inches, millimeters, or points. LockStep Label is a 30-day completely unlocked trial. After 30 days it is a one-time purchase of $39.99, and it is included with Pro. LockStepOCR is free, and it is also included with Pro.</p>
+                    <p><a class="text-link" href="../label/">LockStep Label</a> · <button type="button" class="text-link js-download" data-app="LockStep Label">Download 1.0</button></p>
                 </li>
             </ul>
         </div>
@@ -490,6 +493,59 @@
                     <p>The Real-Time Monitor follows inches, millimetres, or points. Crop, resize, bleed, grid, booklet, folds, and mail merge update that view as the fields change. Float or dock.</p>
                 </article>
             </div>
+        </div>
+    </section>
+
+    <section class="section" id="help">
+        <div class="wrap">
+            <p class="kicker">Help center</p>
+            <h2>The same Help as in the program</h2>
+            <p class="sub">Search, a topic list, and the article. The walkthroughs follow the desk: the job, page tools, production tools, additional tools, and settings. Read them on the page.</p>
+            <p><a class="btn btn-navy" href="help/">Open the help center</a></p>
+            <ul class="grid-3" style="list-style:none;padding:0;">
+                <li>
+                    <a class="card help-entry-card" href="help/#start">
+                        <p class="tool-no">Start</p>
+                        <h3>Start here</h3>
+                        <p>The four panes, the first job, and how a change gets onto the recipe.</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="card help-entry-card" href="help/#assets">
+                        <p class="tool-no">The job</p>
+                        <h3>Assets through Build &amp; Save</h3>
+                        <p>Assets Manager, the Real-Time Monitor, Stack Steps, Page controls, and Build and Save.</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="card help-entry-card" href="help/#crop">
+                        <p class="tool-no">Page tools</p>
+                        <h3>Crop, resize, rotate, color, bleed</h3>
+                        <p>The page-control windows, Apply, and the step that goes on the recipe.</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="card help-entry-card" href="help/#multi-up">
+                        <p class="tool-no">Production</p>
+                        <h3>Impose, mark, merge, check</h3>
+                        <p>Multi-up, Booklet, Crop Marks, Rearrange, Mail Merge, Preflight, and Folds.</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="card help-entry-card" href="help/#automation">
+                        <p class="tool-no">Additional tools</p>
+                        <h3>Automation, OCR, labels</h3>
+                        <p>Hot folders, a searchable PDF from a scan, and a label sheet.</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="card help-entry-card" href="help/#settings">
+                        <p class="tool-no">Settings</p>
+                        <h3>Global Settings</h3>
+                        <p>Units, theme, ruler color, production folders, the recipe folder, and page sizes.</p>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -575,6 +631,7 @@
             <nav class="foot-nav" aria-label="Footer">
                 <a href="../">LockStep Tools</a>
                 <a href="#desk">The desk</a>
+                <a href="help/">Help</a>
                 <a href="#faq">FAQ</a>
                 <a href="../ocr/">LockStepOCR</a>
                 <a href="../label/">LockStepLabel</a>

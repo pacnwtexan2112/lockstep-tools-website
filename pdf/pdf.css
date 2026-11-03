@@ -96,6 +96,16 @@
 .compare p { margin: 0.55rem 0 0; }
 .compare .pro p { color: rgba(243, 238, 232, 0.78); }
 
+a.help-entry-card {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+a.help-entry-card h3 { color: var(--navy); }
+a.help-entry-card:hover { box-shadow: var(--shadow-hover); }
+
 @media (max-width: 980px) {
     .hero-split, .compare { grid-template-columns: 1fr; }
 }

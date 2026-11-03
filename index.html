@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
-    <link rel="stylesheet" href="assets/css/style.css?v=25">
+    <link rel="stylesheet" href="assets/css/style.css?v=26">
     <meta property="og:title" content="LockStep Tools — Software for the Print Industry">
     <meta property="og:description" content="Built for the shop floor, with the print community. Need a tool, send an email. Find a bug, we fix it together.">
     <meta property="og:url" content="https://locksteptools.com/">
@@ -74,17 +74,22 @@
             </svg>
             LockStep Tools
         </a>
-        <nav class="nav-links" aria-label="Primary">
-            <a href="#tools">Tools</a>
-            <a href="#night-shift">Night shift</a>
-            <a href="#dev-direct">Dev direct</a>
-            <a href="#manifesto">Manifesto</a>
-            <a href="#pricing">Pricing</a>
-            <a href="pdf/">LockStepPDF</a>
-            <a href="ocr/">LockStepOCR</a>
-            <a href="label/">LockStepLabel</a>
-        </nav>
-        <div>
+        <div class="header-nav">
+            <nav class="nav-links nav-products" aria-label="Products">
+                <a href="pdf/">LockStepPDF</a>
+                <a href="ocr/">LockStepOCR</a>
+                <a href="label/">LockStepLabel</a>
+            </nav>
+            <nav class="nav-links nav-sections" aria-label="Site">
+                <a href="#tools">Tools</a>
+                <a href="#night-shift">Night shift</a>
+                <a href="#dev-direct">Dev direct</a>
+                <a href="#manifesto">Manifesto</a>
+                <a href="#pricing">Pricing</a>
+            </nav>
+        </div>
+        <div class="header-side">
+            <a class="nav-help" href="pdf/help/">LockStepPDF Help Center</a>
             <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" onclick="openDrawer()">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
             </button>
@@ -97,14 +102,16 @@
     <div class="drawer-panel">
         <h2>LockStep Tools</h2>
         <nav aria-label="Mobile">
+            <a href="pdf/" onclick="closeDrawer()">LockStepPDF</a>
+            <a href="ocr/" onclick="closeDrawer()">LockStepOCR</a>
+            <a href="label/" onclick="closeDrawer()">LockStepLabel</a>
+            <a class="drawer-help" href="pdf/help/" onclick="closeDrawer()">LockStepPDF Help Center</a>
+            <span class="drawer-rule"></span>
             <a href="#tools" onclick="closeDrawer()">Tools</a>
             <a href="#night-shift" onclick="closeDrawer()">Night shift</a>
             <a href="#dev-direct" onclick="closeDrawer()">Dev direct</a>
             <a href="#manifesto" onclick="closeDrawer()">Manifesto</a>
             <a href="#pricing" onclick="closeDrawer()">Pricing</a>
-            <a href="pdf/" onclick="closeDrawer()">LockStepPDF</a>
-            <a href="ocr/" onclick="closeDrawer()">LockStepOCR</a>
-            <a href="label/" onclick="closeDrawer()">LockStepLabel</a>
         </nav>
     </div>
 </div>

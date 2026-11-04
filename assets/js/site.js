@@ -53,8 +53,8 @@ var DOWNLOADS = {
         url: "https://github.com/pacnwtexan2112/ReadySetOCR/releases/download/LockStepOCR/LockStepOCR-Setup-2.5.0.exe"
     },
     "LockStep Label": {
-        file: "LockStepLabel.exe",
-        url: "https://github.com/pacnwtexan2112/LockStepLabel/releases/download/v1.0.0/LockStepLabel.exe"
+        file: "LockStepLabel-Setup-1.0.0.exe",
+        url: "https://github.com/pacnwtexan2112/LockStepLabel/releases/download/v1.0.0/LockStepLabel-Setup-1.0.0.exe"
     }
 };
 

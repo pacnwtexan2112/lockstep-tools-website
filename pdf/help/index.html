@@ -51,6 +51,7 @@
         {"@type": "TechArticle", "headline": "Stack Steps", "url": "https://locksteptools.com/pdf/help/#stack", "description": "The recipe. Each line is one action. Build & Save runs the lines from top to bottom on the files loaded at that moment."},
         {"@type": "TechArticle", "headline": "Page controls", "url": "https://locksteptools.com/pdf/help/#page-controls", "description": "The row under the asset list. It starts closed. Click Page controls to open it. Click it again to close it."},
         {"@type": "TechArticle", "headline": "Build and Save", "url": "https://locksteptools.com/pdf/help/#build", "description": "Write the finished PDF. The button in the header is Build & Save Final PDF."},
+        {"@type": "TechArticle", "headline": "Export Proofs", "url": "https://locksteptools.com/pdf/help/#proofs", "description": "Export a proof of the pages you choose. Open it from Export Proofs in the header. The original PDF is not changed. This is not the production file. Build & Save writes that."},
         {"@type": "TechArticle", "headline": "Crop", "url": "https://locksteptools.com/pdf/help/#crop", "description": "Shave a margin off the pages you choose. Open it from Page controls, Crop. The same form is what Rearrange opens when you click Crop there."},
         {"@type": "TechArticle", "headline": "Resize", "url": "https://locksteptools.com/pdf/help/#resize", "description": "Put each chosen page on a new width and height. Open it from Page controls, Resize. Rearrange's Resize button opens the same window."},
         {"@type": "TechArticle", "headline": "Rotate", "url": "https://locksteptools.com/pdf/help/#rotate", "description": "Turn pages clockwise. Open it from Page controls, Rotate."},
@@ -62,7 +63,6 @@
         {"@type": "TechArticle", "headline": "Rearrange", "url": "https://locksteptools.com/pdf/help/#rearrange", "description": "Reorder, rotate, and recolor the loaded PDFs, then write that order back. Join and Split live in the same window. The tool button is Rearrange. The window title is Arrange Pages."},
         {"@type": "TechArticle", "headline": "Mail Merge", "url": "https://locksteptools.com/pdf/help/#mail-merge", "description": "Stamp a spreadsheet, a counter, a QR code, or an address onto a template. The tool button is Mail Merge/Stamp. It is a Pro tool. The stack line is VDP Mail Merge."},
         {"@type": "TechArticle", "headline": "Preflight", "url": "https://locksteptools.com/pdf/help/#preflight", "description": "Check the loaded PDFs against a profile: fonts, images, color, boxes, bleed, transparency, hairlines, and ink. The tool button is Preflight. Running and reading the report is free. Export, routing, and the jump buttons are Pro."},
-        {"@type": "TechArticle", "headline": "Folds", "url": "https://locksteptools.com/pdf/help/#folds", "description": "Draw fold guides on the monitor and export a die-line proof. Open it from Export Proofs in the header. This is a guide. It is not a production step, and it does not change the original PDF."},
         {"@type": "TechArticle", "headline": "Automation", "url": "https://locksteptools.com/pdf/help/#automation", "description": "Watch folders. Drop a PDF in, and the recipe you attach runs on its own. Open it from Additional Tools, Automation. It is a Pro tool."},
         {"@type": "TechArticle", "headline": "LockStepOCR", "url": "https://locksteptools.com/pdf/help/#ocr", "description": "Make a searchable PDF from a scan, at the original page size. Open it from Additional Tools, LockStepOCR. It is a Pro tool. The engine is Tesseract. If a run says \"Tesseract OCR engine not found.\", install Tesseract and run it again."},
         {"@type": "TechArticle", "headline": "LockStepLabel", "url": "https://locksteptools.com/pdf/help/#labels", "description": "Build a sheet of labels and write a PDF. Open it from Additional Tools, LockStepLabel. It opens in its own window. The same program runs it. If a label window is already open, that window is the one you get."},
@@ -164,6 +164,7 @@
                 <a class="help-topic" href="#stack">Stack Steps</a>
                 <a class="help-topic" href="#page-controls">Page controls</a>
                 <a class="help-topic" href="#build">Build and Save</a>
+                <a class="help-topic" href="#proofs">Export Proofs</a>
                 <p class="help-group">Page tools</p>
                 <a class="help-topic" href="#crop">Crop</a>
                 <a class="help-topic" href="#resize">Resize</a>
@@ -177,7 +178,6 @@
                 <a class="help-topic" href="#rearrange">Rearrange</a>
                 <a class="help-topic" href="#mail-merge">Mail Merge</a>
                 <a class="help-topic" href="#preflight">Preflight</a>
-                <a class="help-topic" href="#folds">Folds</a>
                 <p class="help-group">Additional tools</p>
                 <a class="help-topic" href="#automation">Automation</a>
                 <a class="help-topic" href="#ocr">LockStepOCR</a>
@@ -192,7 +192,7 @@
                 <p>The window you see the first time you open the program.</p>
                 <p>The screen is four panes. Drag a pane title onto another pane to swap them. Drag a pane edge to resize it. The hint under the Tools title says the same thing.</p>
                 <ol>
-                    <li>Assets Manager, on the left. This is the list of PDFs you are working on.</li>
+                    <li>Assets Manager, on the left. This is the list of files you are working on.</li>
                     <li>Tools, in the middle. The buttons across the top open one tool at a time. The form under the buttons is that tool.</li>
                     <li>Real-Time Monitor, on the right. This is the page you are looking at, with rulers, zoom, and a measure tool.</li>
                     <li>Stack Steps, under the tools. This is the recipe. Each line is one thing the program will do when you build the final PDF.</li>
@@ -200,18 +200,23 @@
                 <p>A star on a tool name means that tool asks for a Pro license. Free tools open without one. Global Settings, Account, shows which is which.</p>
                 <h3 id="start-the-first-job" data-slug="the-first-job">The first job</h3>
                 <ol>
-                    <li>Click Add Files in Assets, or drop PDFs onto the list.</li>
+                    <li>Click Add Files in Assets, or drop files onto the list.</li>
                     <li>Open a document with the arrow beside its name, then click a page. The monitor shows that page.</li>
                     <li>Open Page controls under the asset list when you want to change selected pages (crop, rotate, resize, color, bleed, a blank, or delete).</li>
                     <li>Click a tool button when you want a step that runs on the whole job (multi-up, booklet, crop marks, mail merge, and the rest).</li>
                     <li>On a tool form, fill in the numbers, then click the green Add button. The new line appears in Stack Steps. The monitor updates to that step.</li>
                     <li>When the monitor looks right, click Build &amp; Save Final PDF in the header.</li>
                 </ol>
+                <h3 id="start-files-you-can-add" data-slug="files-you-can-add">Files you can add</h3>
+                <p>PDF. PNG, JPG, and TIFF.</p>
+                <p>Word (.doc and .docx), PowerPoint (.ppt and .pptx), and Excel (.xls and .xlsx) are converted to PDF as they are added.</p>
+                <p>Excel asks first. Use each sheet&#x27;s page setup, or Fit all columns on one page, and choose the sheets.</p>
+                <p>A JSON file dropped on the window loads a recipe. It does not become a page in the list.</p>
                 <h3 id="start-numbers" data-slug="numbers">Numbers</h3>
                 <p>Every size, margin, gutter, bleed, and mark uses the unit in Global Settings: inches, millimeters, or points. Change the unit there and the numbers already on the forms convert. A comma or a period both work as a decimal.</p>
                 <h3 id="start-the-header" data-slug="the-header">The header</h3>
                 <p>Build &amp; Save Final PDF opens the save window. That is the file you keep.</p>
-                <p>Export Proofs opens the Folds tool. That draws fold guides. It does not build the production PDF.</p>
+                <p>Export Proofs opens the proof form. Choose Monitor, Selection, or Tree, then PDF, PNG, or JPG. A stamp and fold lines are optional. It does not write the production file.</p>
                 <p>Additional Tools opens Automation, LockStepOCR, and LockStepLabel.</p>
                 <p>Global Settings is units, theme, page-size presets, recipe folder, production folders, and the ruler color.</p>
                 <p>About is the version.</p>
@@ -237,8 +242,8 @@
                     <a href="#monitor">Real-Time Monitor</a>
                     <a href="#stack">Stack Steps</a>
                     <a href="#page-controls">Page controls</a>
+                    <a href="#proofs">Export Proofs</a>
                     <a href="#crop">Crop</a>
-                    <a href="#resize">Resize</a>
                 </div>
             </article>
             <article class="help-article" id="assets" data-group="The job">
@@ -448,8 +453,8 @@
                 <p>Max resolution is Original, 300, 600, 1200, or a number you type.</p>
                 <p>Original sends the file&#x27;s own pixels, including a 1200 DPI image and private image data from Illustrator.</p>
                 <p>A number downsamples only images that are above that resolution. Images already below the number are left alone.</p>
-                <h3 id="build-visual-proofing-options" data-slug="visual-proofing-options">Visual Proofing Options</h3>
-                <p>Apply Production Proof Watermark stamps the text in the box across the pages. The box starts with a proof word in red. Change the word before you save a proof. Leave the checkbox off for a clean production file.</p>
+                <h3 id="build-a-proof" data-slug="a-proof">A proof</h3>
+                <p>Build &amp; Save writes the production file with no stamp and no fold lines. A proof, with a stamp or fold lines, is <a href="#proofs">Export Proofs</a>.</p>
                 <h3 id="build-choose-path-save" data-slug="choose-path-save">Choose Path &amp; Save</h3>
                 <p>Pick the file, or the folder, and the build runs. The header shows Exporting while it works.</p>
                 <p>A page-geometry warning, when there is one, appears after the save.</p>
@@ -462,6 +467,7 @@
                 <div class="help-related">
                     <span>Related</span>
                     <a href="#stack">Stack Steps</a>
+                    <a href="#proofs">Export Proofs</a>
                     <a href="#bleed">Bleed</a>
                     <a href="#mail-merge">Mail Merge</a>
                 </div>
@@ -982,52 +988,66 @@
                     <a href="#automation">Automation</a>
                 </div>
             </article>
-            <article class="help-article" id="folds" data-group="Production tools">
-                <p class="kicker">Production tools</p>
-                <h2>Folds</h2>
-                <p>Draw fold guides on the monitor and export a die-line proof. Open it from Export Proofs in the header. This is a guide. It is not a production step, and it does not change the original PDF.</p>
-                <h3 id="folds-a-first-guide" data-slug="a-first-guide">A first guide</h3>
+            <article class="help-article" id="proofs" data-group="The job">
+                <p class="kicker">The job</p>
+                <h2>Export Proofs</h2>
+                <p>Export a proof of the pages you choose. Open it from Export Proofs in the header. The original PDF is not changed. This is not the production file. <a href="#build">Build &amp; Save</a> writes that.</p>
+                <p>A proof can differ from <a href="#build">Build &amp; Save</a>. The monitor compiles with preview settings. Build &amp; Save flattens and can compress. A mail-merge proof stops at the same preview record cap as the monitor, 40 records.</p>
+                <h3 id="proofs-a-first-guide" data-slug="a-first-guide">A first guide</h3>
                 <ol>
                     <li>Click Export Proofs.</li>
-                    <li>Pick a fold type. The sentence under the menu describes that fold.</li>
-                    <li>Set the finished flat size, or turn on Match loaded PDF page size.</li>
-                    <li>Set the bleed on each side.</li>
-                    <li>Choose the fold direction.</li>
-                    <li>Read the summary. The guides draw on the Real-Time Monitor.</li>
+                    <li>Leave the fold type at None, or pick a fold. The sentence under the menu describes that fold.</li>
+                    <li>Choose Monitor, Selection, or Tree.</li>
+                    <li>Set a stamp if you want one. Type the words, choose a color, and set the opacity from 10 to 100.</li>
                     <li>Pick PDF, PNG, or JPG, and click Export proof…</li>
                 </ol>
-                <h3 id="folds-fold-type" data-slug="fold-type">Fold type</h3>
+                <h3 id="proofs-what-to-export" data-slug="what-to-export">What to export</h3>
+                <p>Monitor is the compiled preview: the stack through the step you are viewing, the current file, or the merged run. A Ctrl-click or Shift-click group of imposed sheets exports that group. With no group, every page in that preview is included. If the preview is not built yet, Export Proofs compiles it the same way the monitor does.</p>
+                <p>Selection is the highlighted pages in the asset tree, from top to bottom. Those are the working pages, before the stack. If nothing is highlighted, the export stops and asks you to highlight pages.</p>
+                <p>Tree is every page in the asset tree, in that order. The highlight and Preview Merged do not change it.</p>
+                <h3 id="proofs-blank-sheet-fold-lines-only" data-slug="blank-sheet-fold-lines-only">Blank sheet, fold lines only</h3>
+                <p>Turn this on to write the fold guides on a blank page, with no artwork. Pick a fold type first. None has no fold lines, so that export stops and asks you to pick a fold.</p>
+                <h3 id="proofs-fold-type" data-slug="fold-type">Fold type</h3>
+                <p>None. No fold lines. The proof is the pages you chose, plus a stamp if you turn that on. This is the starting choice.</p>
                 <p>Single (half) Fold. Two equal panels. Four faces.</p>
                 <p>Z Fold. Three equal panels that accordion.</p>
                 <p>Single Gate Fold. Left and right flaps meet at the center.</p>
                 <p>Roll (Barrel) Fold. The outside two panels are largest. From the third panel, each is 1/16 inch smaller.</p>
                 <p>Half Fold &amp; Tri Fold. Fold in half, then tri-fold the other way.</p>
-                <p>Tri-fold Brochure. Three panels. The right panel is 1/16 inch smaller so it tucks. This is the starting choice.</p>
+                <p>Tri-fold Brochure. Three panels. The right panel is 1/16 inch smaller so it tucks.</p>
                 <p>Double Parallel. Half, then half again the same way. The last two panels are 1/16 inch smaller.</p>
                 <p>Double Gate Fold. A gate fold, then a fold at the center. The end panels are 1/16 inch smaller.</p>
                 <p>Right Angle (French) Fold. Half in one direction, then half the other.</p>
                 <p>Accordion (M) Fold. Three zigzag folds, four equal panels per side.</p>
-                <h3 id="folds-finished-flat-size-trim" data-slug="finished-flat-size-trim">Finished flat size (trim)</h3>
+                <h3 id="proofs-finished-flat-size-trim" data-slug="finished-flat-size-trim">Finished flat size (trim)</h3>
                 <p>The menu is the preset list, plus Use current PDF.</p>
                 <p>Width and Height are the trim, in the current unit. Enter them as portrait. Landscape (swap width / height) exchanges them.</p>
-                <p>Match loaded PDF page size reads the page on the monitor. If Artwork already includes this bleed is on, the trim is the page minus the bleed on every side.</p>
-                <h3 id="folds-bleed" data-slug="bleed">Bleed</h3>
+                <p>Match loaded PDF page size reads each exported page on its own. If Artwork already includes this bleed is on, the trim is that page minus the bleed on every side.</p>
+                <h3 id="proofs-bleed" data-slug="bleed">Bleed</h3>
                 <p>Each side is the bleed distance.</p>
                 <p>Artwork already includes this bleed (inset guides from the page edge). Turn this on when the PDF is already the die, trim plus bleed. The fold lines sit on the trim, inside that bleed. Leave it off when the PDF is the trim and the bleed should be added outside it.</p>
-                <h3 id="folds-fold-direction" data-slug="fold-direction">Fold direction</h3>
+                <h3 id="proofs-fold-direction" data-slug="fold-direction">Fold direction</h3>
                 <p>Along the width draws vertical fold lines.</p>
                 <p>Along the height draws horizontal fold lines.</p>
-                <h3 id="folds-the-summary" data-slug="the-summary">The summary</h3>
+                <p>On an imposed sheet, the lines run across that sheet.</p>
+                <h3 id="proofs-the-summary" data-slug="the-summary">The summary</h3>
                 <p>The pale bar shows the trim panels, then the die size (trim plus bleed), in the current unit. The panel list is the widths in order. A tucked panel is the shorter one.</p>
-                <h3 id="folds-export" data-slug="export">Export</h3>
+                <h3 id="proofs-stamp" data-slug="stamp">Stamp</h3>
+                <p>Apply stamp is off until you turn it on.</p>
+                <p>Stamp text starts as DIGITAL PROOF. Empty text draws nothing.</p>
+                <p>Choose color sets the stamp color. It starts as red.</p>
+                <p>Opacity is a whole number from 10 to 100. It starts at 30.</p>
+                <p>The stamp is one line, mid-page, on every exported page. It is drawn after the fold lines.</p>
+                <h3 id="proofs-export" data-slug="export">Export</h3>
                 <p>Format is PDF, PNG, or JPG.</p>
                 <p>Export proof… asks where to save.</p>
-                <p>PDF is the die-line proof: guides only, with a title that says it is not for press.</p>
-                <p>PNG and JPG are a picture of that proof, at the export resolution.</p>
-                <p>The original PDF is unchanged.</p>
+                <p>PDF is one file with every chosen page.</p>
+                <p>PNG and JPG are one picture per page, at the export resolution. One page asks for one file. More than one page asks for a folder and writes numbered pictures.</p>
+                <p>The original PDF is unchanged. The proof is not copied to a production folder.</p>
                 <div class="help-related">
                     <span>Related</span>
-                    <a href="#monitor">Real-Time Monitor</a>
+                    <a href="#build">Build and Save</a>
+                    <a href="#color">Color</a>
                     <a href="#bleed">Bleed</a>
                 </div>
             </article>
@@ -1225,6 +1245,6 @@
 </footer>
 
 <script src="../../assets/js/site.js?v=26"></script>
-<script src="help.js?v=2"></script>
+<script src="help.js?v=3"></script>
 </body>
 </html>

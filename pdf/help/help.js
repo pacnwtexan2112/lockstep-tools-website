@@ -241,8 +241,11 @@
     function parseHref(href) {
         var raw = decodeURIComponent(String(href || "").replace(/^#/, ""));
         var slash = raw.indexOf("/");
-        if (slash === -1) return { key: raw, section: "" };
-        return { key: raw.slice(0, slash), section: raw.slice(slash + 1) };
+        var parsed = slash === -1
+            ? { key: raw, section: "" }
+            : { key: raw.slice(0, slash), section: raw.slice(slash + 1) };
+        if (parsed.key === "folds") parsed.key = "proofs";
+        return parsed;
     }
 
     function stepHit(direction) {

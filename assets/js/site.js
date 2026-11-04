@@ -48,6 +48,10 @@ document.addEventListener("click", function (event) {
 });
 
 var DOWNLOADS = {
+    "LockStepPDF": {
+        file: "LockStepPDF_4.1.0_Setup.exe",
+        url: "https://github.com/pacnwtexan2112/LockStepPDF/releases/download/v4.1.0/LockStepPDF_4.1.0_Setup.exe"
+    },
     "LockStepOCR": {
         file: "LockStepOCR-Setup-2.5.0.exe",
         url: "https://github.com/pacnwtexan2112/ReadySetOCR/releases/download/LockStepOCR/LockStepOCR-Setup-2.5.0.exe"
